@@ -89,19 +89,10 @@ javap -cp bin/ -c HelloWorld
 <details> 
 <summary>Lista de atividades</summary>
 
-|Semana| Atividades |
+| # | Atividades |
 |---|---|
 | 0 | [Hello, World!](./00-hello) |
-| 1 | [Calculadora de índice de massa corporal (IMC)](./01-imc)|
-|   | [Calculadora da Área de um Polígono Regular](./02-area) |
-|   | [Sequência de Fibonnaci](./03-fibonacci) |
-|   | [Elefante visitando amigo](./04-elephant) |
-|   | [Senha forte](./05-password) |
-| 2 | [Calculadora de frequência cardíaca alvo](./06-heart) |
-|   | [Registro de saúde digital](./07-health) |
-|   | [Palíndromos](08-palindrome) |
-|   | [Conjectura de Collatz](./09-collatz) |
-|   | [Mediana de três](./10-median)  |
+| 1 | [Triângulo](./01-triangle)|
 
 </details> 
 
