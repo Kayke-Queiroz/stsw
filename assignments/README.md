@@ -89,7 +89,7 @@ javap -cp bin/ -c HelloWorld
 <details> 
 <summary>Lista de atividades</summary>
 
-|Semana| Atividades |
+|#| Atividades |
 |---|---|
 | 0 | [Hello, World!](./00-hello) |
 | 1 | [Triângulo](./01-triangle)|
