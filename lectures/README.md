@@ -2,7 +2,9 @@
 
 Aqui você encontrará referência para os slides utilizados ao longo do curso.
 
-- [Aula 1 - Introdução e contextualização](https://1drv.ms/p/s!Avnn2LcOmn0Y3ltEAM4VkDlZVnQZ?e=a8rE6j)
+- [Aula 1 - Apresentação da disciplina e contextualização](https://1drv.ms/p/s!Avnn2LcOmn0Y3ltEAM4VkDlZVnQZ?e=a8rE6j)
+- [Aula 2 - Verificação e validação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ)
+- [Aula 3 - Noções de BDD e Gherkin e Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR)
 
 ## Referências
 
