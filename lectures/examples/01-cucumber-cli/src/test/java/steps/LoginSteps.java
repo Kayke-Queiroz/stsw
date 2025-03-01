@@ -1,7 +1,6 @@
 package steps;
 
-import main.java.*;
-
+import app.Login;
 import io.cucumber.java.en.*;
 
 public class LoginSteps {
@@ -18,7 +17,7 @@ public class LoginSteps {
 
         Login login = new Login(usuario, senha);
 
-        login.autenticar(usuario, s enha);
+        login.autenticar(usuario, senha);
     }
 
     @Then("ele deve ver a mensagem {string}")

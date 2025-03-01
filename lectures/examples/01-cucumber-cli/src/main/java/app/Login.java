@@ -1,5 +1,4 @@
-
-package main.java;
+package app;
 
 public class Login {
     private String usuario;

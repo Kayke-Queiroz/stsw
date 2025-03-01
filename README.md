@@ -359,12 +359,17 @@ curl -L  -o lib/apiguardian-api-1.1.2.jar https://repo1.maven.org/maven2/org/api
 ```
 
 ```bash
-javac -cp "lib/*" -d bin src/test/java/steps/*.java src/main/java/*.java
+javac -cp "lib/*" -d bin src/test/java/steps/*.java src/main/app/java/*.java
 ```
 
 ```bash
 java -cp "lib/*:bin" io.cucumber.core.cli.Main src/test/resources/features --glue steps
 ```
+
+```bash 
+java -cp "lib/*:bin:src/test/resources/features" io.cucumber.core.cli.Main
+```
+
 > 🎉 **Parabéns!** Você concluiu a configuração do ambiente com sucesso! Agora está pronto para começar a programar. 🚀
 
 
