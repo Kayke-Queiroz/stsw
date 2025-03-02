@@ -359,7 +359,7 @@ curl -L  -o lib/apiguardian-api-1.1.2.jar https://repo1.maven.org/maven2/org/api
 ```
 
 ```bash
-javac -cp "lib/*" -d bin src/test/java/steps/*.java src/main/app/java/*.java
+javac -cp "lib/*" -d bin src/test/java/steps/*.java src/main/java/app/*.java
 ```
 
 ```bash
