@@ -11,15 +11,12 @@ public class LoginSteps {
 
     private String mensagem;
 
-    @Given("o usuário está na página de login")
-    public void usuarioNaPaginaDeLogin() {
-        System.out.println("Usuário acessou a página de login.");
+    @Given("usuário está na página de login")
+    public void given_usuario_acessou_pagina_de_login() {
     }
 
-    @When("ele digita usuário {string} e senha {string}")
-    public void usuarioEntraComCredenciais(String usuario, String senha) {
-
-        System.out.println("Usuário: " + usuario + " | Senha: " + senha);
+    @When("usuário digita usuário {string} e senha {string}")
+    public void when_ele_digita_usuario_e_senha(String usuario, String senha) {
 
         Login login = new Login(usuario, senha);
 
@@ -27,10 +24,8 @@ public class LoginSteps {
         
     }
 
-    @Then("ele deve ver a mensagem {string}")
-    public void sistemaExibeMensagem(String mensagem) {
-
+    @Then("usuário deve receber a mensagem {string}")
+    public void then_o_usuario_deve_receber_a_mensagem(String mensagem) {
         assertEquals(mensagem, this.mensagem);
-        System.out.println("Mensagem exibida: " + mensagem);
     }
 }
