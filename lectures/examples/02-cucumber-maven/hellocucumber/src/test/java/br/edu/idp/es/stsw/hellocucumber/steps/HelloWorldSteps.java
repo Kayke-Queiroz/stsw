@@ -2,7 +2,7 @@ package br.edu.idp.es.stsw.hellocucumber.steps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.edu.idp.es.stsw.HelloWorld;
+import br.edu.idp.es.stsw.hellocucumber.HelloWorld;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
