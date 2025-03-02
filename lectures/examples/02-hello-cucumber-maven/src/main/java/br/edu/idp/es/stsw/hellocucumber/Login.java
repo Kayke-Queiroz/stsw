@@ -9,7 +9,7 @@ public class Login {
         this.senha = senha;
     }
 
-    public String autenticar(String usuario, String senha) {
+    public String autenticar() {
 
         if (this.usuario.equals("admin") && this.senha.equals("1234"))
             return "Usuário autenticado com sucesso!";
