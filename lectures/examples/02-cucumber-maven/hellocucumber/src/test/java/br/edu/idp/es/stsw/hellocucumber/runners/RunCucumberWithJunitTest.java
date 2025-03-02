@@ -1,4 +1,4 @@
-package br.edu.idp.es.stsw.hellocucumber;
+package br.edu.idp.es.stsw.hellocucumber.runners;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;

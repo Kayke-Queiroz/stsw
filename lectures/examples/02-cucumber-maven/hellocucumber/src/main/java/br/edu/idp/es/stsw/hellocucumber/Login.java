@@ -1,4 +1,4 @@
-package br.edu.idp.es.stsw;
+package br.edu.idp.es.stsw.hellocucumber;
 
 public class Login {
     private String usuario;
