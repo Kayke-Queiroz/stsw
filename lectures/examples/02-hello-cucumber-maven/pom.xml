@@ -92,7 +92,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>br.edu.idp.es.stsw.Main</mainClass>
+                            <mainClass>br.edu.idp.es.stsw.HelloWorld</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
