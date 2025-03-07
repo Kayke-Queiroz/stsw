@@ -10,14 +10,25 @@ public class LoginSteps {
         System.out.println("Usuário acessou a página de login.");
     }
 
-    @When("ele digita usuário {string} e senha {string}")
-    public void usuarioEntraComCredenciais(String usuario, String senha) {
+    @When("ele digita usuário {string} e senha {string} e codigo de verificação {int}")
+    public void usuarioEntraComCredenciais(String usuario, String senha, int cdig) {
 
         System.out.println("Usuário: " + usuario + " | Senha: " + senha);
 
+        System.out.println("Código: " + cdig);
+
         Login login = new Login(usuario, senha);
 
-        login.autenticar(usuario, senha);
+        login.cdig = cdig;
+
+        boolean autenticado = login.autenticar(usuario, "123456");
+
+        if (autenticado) {
+            System.out.println("Usuário autenticado com sucesso.");
+        } else {
+            System.out.println("Usuário não autenticado.");
+            throw new RuntimeException("Usuário não autenticado.");
+        }
     }
 
     @Then("ele deve ver a mensagem {string}")
