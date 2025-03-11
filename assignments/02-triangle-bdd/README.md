@@ -1,4 +1,4 @@
-## Casos de testes para o problema do triângulo usando BDD
+## Implementar casos de testes em Cucumber e Gherkin com técnica BVA 
 
 * Copiar estrutura do projeto disponível no diretório [02-hello-cucumber-maven](../lectures/examples/02-hello-cucumber-maven)
 * Copiar para a estrutura do projeto a [classe do triângulo](../01-triangle/submissions) desenvolvida na atividade anterior

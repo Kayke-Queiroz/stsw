@@ -8,6 +8,8 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 2 | [Aula 02 - Verificação e validação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | [Configuração do ambiente java](../README.md) e execução do [Hello, World!](./examples/00-hello) |
 | 3 | [Aula 03 - Noções de BDD, Cucumber e Gherkin](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR) | [Demonstração de execução de testes com Cucumber, Junit e Maven](./examples/02-hello-cucumber-maven) |
 | 4 | [Aula 04 - Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
+| 5 | [Aula 05 - Métodos para definição de casos de testes (ECP e DT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2Vtoa5y78KU1oskO?e=VHTIY1) | |
+| 6 | [Aula 06 - Métodos para definição de casos de testes (ST e UCT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2hlXhXx1F0lQCbym?e=HS5geg) | |
 
 ## Referências
 

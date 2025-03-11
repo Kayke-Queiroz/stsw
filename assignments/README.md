@@ -92,7 +92,8 @@ javap -cp bin/ -c HelloWorld
 | # | Atividades |
 |---|---|
 | 0 | [Hello, World!](./00-hello) |
-| 1 | [Triângulo](./01-triangle)|
+| 1 | [Implementar programa do Triângulo](./01-triangle) |
+| 2 | [Implementar casos de testes em Cucumber e Gherkin com técnica BVA ](./02-triangle-bdd) |
 
 </details> 
 
