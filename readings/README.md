@@ -10,7 +10,8 @@
 
 # Leituras sobre programação orientada a objetos
 
-* [The Cost of Poor Quality Software in US: a 2020 report](https://1drv.ms/b/s!Avnn2LcOmn0Y2Emz5IzxeuDfK6Lg?e=P7qzEB)
-* [Guidelines for Verifying and Validating Software Requirements and Design Specifications](https://1drv.ms/b/s!Avnn2LcOmn0Y2Dx3Y2S4N8eJ4CY1?e=tSmu9v)
-
+1. [The Cost of Poor Quality Software in US: a 2020 report](https://1drv.ms/b/s!Avnn2LcOmn0Y2Emz5IzxeuDfK6Lg?e=P7qzEB)
+1. [Guidelines for Verifying and Validating Software Requirements and Design Specifications](https://1drv.ms/b/s!Avnn2LcOmn0Y2Dx3Y2S4N8eJ4CY1?e=tSmu9v)
+1. [Building software that makes a difference](https://1drv.ms/b/s!Avnn2LcOmn0Y2D-P6eNbYrRhGJNZ?e=6yYKXY)
+1. [The Psychology and Economics of Software Testing](https://1drv.ms/b/s!Avnn2LcOmn0Y2SmMpGRGJhy3fGB6?e=BS0kDJ)
 

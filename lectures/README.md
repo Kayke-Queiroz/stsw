@@ -2,9 +2,12 @@
 
 Aqui você encontrará referência para os slides utilizados ao longo do curso.
 
-- [Aula 01 - Apresentação da disciplina e contextualização](https://1drv.ms/p/s!Avnn2LcOmn0Y3ltEAM4VkDlZVnQZ?e=a8rE6j)
-- [Aula 02 - Verificação e validação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ)
-- [Aula 03 - Noções de BDD e Gherkin e Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR)
+|#| Conteúdo | Atividade em sala|
+|---|---|---|
+| 1 | [Aula 01 - Apresentação da disciplina e contextualização](https://1drv.ms/p/s!Avnn2LcOmn0Y3ltEAM4VkDlZVnQZ?e=a8rE6j) | |
+| 2 | [Aula 02 - Verificação e validação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | [Configuração do ambiente java](../README.md) e execução do [Hello, World!](./examples/00-hello) |
+| 3 | [Aula 03 - Noções de BDD, Cucumber e Gherkin](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR) | [Demonstração de execução de testes com Cucumber, Junit e Maven](./examples/02-hello-cucumber-maven) |
+| 4 | [Aula 04 - Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
 
 ## Referências
 
