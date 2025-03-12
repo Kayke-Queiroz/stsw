@@ -1,7 +1,11 @@
-## Atividades práticas de programação em java
 
-<details>
-<summary>Instruções gerais para entrega das atividades</summary>
+Nesta página você encontra
+1. [Instruções gerais para entrega das atividades](#instruções-gerais-para-entrega-das-atividades)
+1. [Instruções para testes locais das atividades](#instruções-para-testes-locais-das-atividades)
+1. [Como compilar, empacotar, decompilar e executar programa java na linha de comando</summary>](#como-compilar-empacotar-decompilar-e-executar-programa-java-na-linha-de-comando)
+1. [Lista de atividades](#lista-de-atividades)
+
+### Instruções gerais para entrega das atividades
 
 * Realizar fork do repositório da disciplina
 ```bash
@@ -48,10 +52,7 @@ gh pr create --base 2025.1 --head seu-usuario:2025.1 --title "Minha tarefa XXX" 
 * Submeter link do pull request no [ambiente virtual](https://ambientevirtual.idp.edu.br/)
 * Cumprir prazo de entrega
 
-</details>
-
-<details>
-<summary>Instruções para testes locais das atividades</summary>
+### Instruções para testes locais das atividades
 
 Cada atividade é acompanhada de testes unitários. Para avaliar seu código antes de submetê-lo, execute os seguintes comandos a partir de seu diretório pessoal de cada atividade
  ```bash
@@ -63,10 +64,8 @@ Cada atividade é acompanhada de testes unitários. Para avaliar seu código ant
  
  java -jar lib/junit-platform-console-standalone-1.11.4.jar --class-path bin --scan-class-path
  ```
-</details>
 
-<details>
-<summary>Compilar, empacotar, decompilar e executar programa java na linha de comando</summary>
+### Como compilar, empacotar, decompilar e executar programa java na linha de comando</summary>
 
 Execute os comandos abaixo para compilar, empacotar, decompilar e executar programa java na linha de comando 
 
@@ -84,15 +83,10 @@ java -jar bin/HelloWorld.jar
 javap -cp bin/ -c HelloWorld
 ```
 
-</details>
-
-<details> 
-<summary>Lista de atividades</summary>
+### Lista de atividades
 
 | # | Atividades |
 |---|---|
 | 0 | [Hello, World!](./00-hello) |
-| 1 | [Triângulo](./01-triangle)|
-
-</details> 
-
+| 1 | [Implementar programa do Triângulo](./01-triangle) |
+| 2 | [Implementar casos de testes em Cucumber e Gherkin com técnica BVA ](./02-triangle-bdd) |
