@@ -3,6 +3,7 @@ package app;
 public class Login {
     private String usuario;
     private String senha;
+    public int cdig;
 
     public Login(String usuario, String senha) {
         this.usuario = usuario;
@@ -11,6 +12,10 @@ public class Login {
 
     public boolean autenticar(String usuario, String senha) {
         System.out.println("Autenticando usuário: " + usuario + " | Senha: " + senha);
-        return this.usuario.equals(usuario) && this.senha.equals(senha);
-    }
-}
+        if (cdig == 1) {
+            return this.usuario.equals(usuario) && this.senha.equals(senha);
+        } else {
+            return false;
+        }
+    }   
+}   
