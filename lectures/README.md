@@ -10,6 +10,7 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 4 | [Aula 04 - Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
 | 5 | [Aula 05 - Métodos para definição de casos de testes (ECP e DT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2Vtoa5y78KU1oskO?e=VHTIY1) | |
 | 6 | [Aula 06 - Métodos para definição de casos de testes (ST e UCT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2hlXhXx1F0lQCbym?e=HS5geg) | |
+| 7 | Exercícios sobre métodos para definição de casos de testes | [Quizz](https://idp2.vevox.com/#/share/IAC2XY208LFL03B0J56Y/meetingdata/722283/session/726220) |
 
 ## Referências
 
