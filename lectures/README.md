@@ -12,6 +12,7 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 6 | [Aula 06 - Métodos para definição de casos de testes (ST e UCT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2hlXhXx1F0lQCbym?e=HS5geg) | |
 | 7 | Exercícios sobre métodos para definição de casos de testes | [Quizz](https://idp2.vevox.com/#/share/IAC2XY208LFL03B0J56Y/meetingdata/722283/session/726220) |
 | 8 | [Métodos para definição de casos de testes - White box](https://1drv.ms/p/s!Avnn2LcOmn0Y2ggkPIZJ1H2W7jl_?e=9jO2ia) |  
+| 9 | [Métodos para definição de casos de testes (experience-based)](https://1drv.ms/p/s!Avnn2LcOmn0Y2jtp8mREy85CpQ-S?e=mIivF3) | |
 
 ## Referências
 
