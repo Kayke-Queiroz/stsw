@@ -21,6 +21,7 @@ Nesta página você encontra:
 1. [Guidelines for Verifying and Validating Software Requirements and Design Specifications](https://1drv.ms/b/s!Avnn2LcOmn0Y2Dx3Y2S4N8eJ4CY1?e=tSmu9v)
 1. [Building software that makes a difference](https://1drv.ms/b/s!Avnn2LcOmn0Y2D-P6eNbYrRhGJNZ?e=6yYKXY)
 1. [The Psychology and Economics of Software Testing](https://1drv.ms/b/s!Avnn2LcOmn0Y2SmMpGRGJhy3fGB6?e=BS0kDJ)
+1. [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
 
 ### Leituras extras
 
