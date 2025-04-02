@@ -1,8 +1,9 @@
-Feature: Hello World
-    Scenario: Imprimir a mensagem "Hello, World!"
-    Given usuario executou o programa
-    When o programa inicia
-    Then o programa imprime a mensagem "Hello, World!"
+Feature: Calcular Prêmio do Seguro
+    Scenario: Calcula prêmio com sucesso
+    Given o segurado deseja contratar o seguro
+    When o segurado tem 16 anos
+    And o segurado tem 2 pontos 
+    Then o sistema calcula o valor de R$ 1400 de prêmio
 
 
     Scenario: Imprimir a mensagem personalizada
