@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Calculator","Adicionar dois números","SUCCESS","2025-04-15T20:02:51.898919637-03:00[America/Sao_Paulo]","0.0","0.79"
+"Calculator","Adicionar um número positivo e um negativo","SUCCESS","2025-04-15T20:02:52.713404737-03:00[America/Sao_Paulo]","0.0","0.07"
