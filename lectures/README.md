@@ -12,6 +12,11 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 6 | [Aula 06 - Métodos para definição de casos de testes (ST e UCT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2hlXhXx1F0lQCbym?e=HS5geg) | |
 | 7 | Exercícios sobre métodos para definição de casos de testes | [Quizz](https://idp2.vevox.com/#/share/IAC2XY208LFL03B0J56Y/meetingdata/722283/session/726220) |
 | 8 | [Métodos para definição de casos de testes - White box](https://1drv.ms/p/s!Avnn2LcOmn0Y2ggkPIZJ1H2W7jl_?e=9jO2ia) |  
+| 9 | [Métodos para definição de casos de testes (experience-based)](https://1drv.ms/p/s!Avnn2LcOmn0Y2jtp8mREy85CpQ-S?e=mIivF3) | |
+| 10 | [Testes no ciclo de desenvolvimento de software (SDLC)](https://1drv.ms/p/s!Avnn2LcOmn0Y2iM5J1SR5q2lhUal?e=XojnEI) | |
+| 11 | [Gestão de testes](https://1drv.ms/p/s!Avnn2LcOmn0Y2lIG01JxYi2XV7E3?e=9aOrxd) | |
+| 12 | [Estudo de caso seguradora](https://1drv.ms/p/s!Avnn2LcOmn0Y2ltXDn63Z3Z9o0nz?e=XVmIGT) | |
+| 13 | []() | |
 
 ## Referências
 
