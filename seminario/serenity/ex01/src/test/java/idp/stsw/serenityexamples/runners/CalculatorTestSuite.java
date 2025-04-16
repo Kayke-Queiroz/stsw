@@ -10,10 +10,10 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features")
+@SelectClasspathResource("features/calculator")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "idp.stsw.serenityexamples.steps")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, 
     value = "pretty, html:target/cucumber-reports/Cucumber.html, json:target/cucumber-report.json, io.cucumber.core.plugin.SerenityReporterParallel")
-public class SerenityTestSuite {
+public class CalculatorTestSuite {
     // A classe fica vazia porque a configuração é feita totalmente via anotações.
 }
