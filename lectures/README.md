@@ -16,7 +16,10 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 10 | [Testes no ciclo de desenvolvimento de software (SDLC)](https://1drv.ms/p/s!Avnn2LcOmn0Y2iM5J1SR5q2lhUal?e=XojnEI) | |
 | 11 | [Gestão de testes](https://1drv.ms/p/s!Avnn2LcOmn0Y2lIG01JxYi2XV7E3?e=9aOrxd) | |
 | 12 | [Estudo de caso seguradora](https://1drv.ms/p/s!Avnn2LcOmn0Y2ltXDn63Z3Z9o0nz?e=XVmIGT) | |
-| 13 | []() | |
+| 13 | [Estudo de caso: The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) | |
+| 14 | [Apresentação estrutura do seminário](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBhELQAAAAABDx6uFzTNSm9FNc0vnwPRAg?e=ZavSeI) | |
+| 15 | [Princípios de teste de software](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBiELQAAAAABcMcqWrfrAcjbs5jFu2szXQ?e=hFugmB) | |
+| 16 | Uso de IA no teste de software | | 
 
 ## Referências
 
