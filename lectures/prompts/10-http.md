@@ -1,4 +1,10 @@
-### Introdução ao HTTP
+## Protocolo HTTP
+
+Referências
+
+* [HTTP - Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
+
+### Introdução
 ```
 Explique o que é o protocolo HTTP, sua importância para a comunicação na web e como ele funciona em alto nível.
 - O que significa dizer que o HTTP é um protocolo "sem estado"?

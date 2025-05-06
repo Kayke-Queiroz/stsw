@@ -5,7 +5,7 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 |#| Conteúdo | Atividade em sala|
 |---|---|---|
 | 1 | [Apresentação da disciplina e contextualização](https://1drv.ms/p/s!Avnn2LcOmn0Y3ltEAM4VkDlZVnQZ?e=a8rE6j) | |
-| 2 | [Verificação e validação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | [Configuração do ambiente java](../README.md) e execução do [Hello, World!](./examples/00-hello) |
+| 2 | [Validação e verificação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | [Configuração do ambiente java](../README.md) e execução do [Hello, World!](./examples/00-hello) |
 | 3 | [Noções de BDD, Cucumber e Gherkin](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR) | [Demonstração de execução de testes com Cucumber, Junit e Maven](./examples/02-hello-cucumber-maven) |
 | 4 | [Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
 | 5 | [Métodos para definição de casos de testes (ECP e DT)](https://1drv.ms/p/s!Avnn2LcOmn0Y2Vtoa5y78KU1oskO?e=VHTIY1) | |
@@ -21,7 +21,7 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 15 | [Princípios de teste de software](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBiELQAAAAABcMcqWrfrAcjbs5jFu2szXQ?e=hFugmB) | |
 | 16 | Uso de IA no teste de software | | 
 | 17 | [Introdução do desenvolvimento seguro de software](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBjmLQAAAAAB1TpIuG2JnM9Gti7brQn5_A?e=WrRbqC) | |
-
+| 18 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Injection](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBgoLgAAAAAB_MgPMXXrQld7uAqBOMj3sw?e=JKvX9U) | |
 
 ## Referências
 
@@ -44,7 +44,4 @@ Referências de livros, artigos, cursos e outros materiais utilizados na discipl
 * BOEHM, BARRY. Guidelines for Verifying and Validating Software Requirements and Design Specifications.
 * NIST. Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities. NIST SP 800-218, 2022.
 
-### Cursos
-
-
-
+### Cursos  
