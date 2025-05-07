@@ -8,6 +8,7 @@ Referências
 * [XSStrike](https://github.com/s0md3v/XSStrike)
 
 ### Introdução à Vulnerabilidade Injection (A03:2021)
+
 ```
 Explique o que é uma vulnerabilidade do tipo Injection, segundo a OWASP.
 - Por que ela ainda ocupa um lugar no Top 10 de riscos de segurança em 2021?
@@ -19,6 +20,7 @@ Explique o que é uma vulnerabilidade do tipo Injection, segundo a OWASP.
 ```
 
 ### Entendendo a Injeção SQL
+
 ```
 Descreva o funcionamento de uma injeção SQL com base nas diretrizes do Web Security Testing Guide.
 - Como a manipulação da entrada do usuário afeta a consulta SQL?
@@ -30,6 +32,7 @@ Descreva o funcionamento de uma injeção SQL com base nas diretrizes do Web Sec
 ```
 
 ### Prevenção com PreparedStatement em Java
+
 ```
 Explique o uso de PreparedStatement como defesa primária contra SQL Injection.
 - Por que o uso de PreparedStatement com bind parameters evita a injeção?
@@ -41,6 +44,7 @@ Explique o uso de PreparedStatement como defesa primária contra SQL Injection.
 ```
 
 ### Técnicas de Teste para SQL Injection
+
 ```
 Aplique as técnicas do Web Security Testing Guide para identificar SQL Injection.
 - Quais sinais revelam uma falha de injeção (ex: mensagens de erro, comportamento anômalo)?
@@ -53,6 +57,7 @@ Aplique as técnicas do Web Security Testing Guide para identificar SQL Injectio
 ```
 
 ### Testando com SQLMap
+
 ```
 Utilize a ferramenta SQLMap para identificar e explorar uma injeção SQL.
 - Como o SQLMap realiza detecção automática?
@@ -65,6 +70,7 @@ Utilize a ferramenta SQLMap para identificar e explorar uma injeção SQL.
 ```
 
 ### Casos Reais e Impactos
+
 ```
 Apresente um caso real de ataque por SQL Injection e as consequências.
 - Como o atacante explorou a falha?
@@ -76,6 +82,7 @@ Apresente um caso real de ataque por SQL Injection e as consequências.
 ```
 
 ### Boas Práticas e Checklist OWASP
+
 ```
 Com base nas recomendações da OWASP, elabore um checklist para prevenir injeções.
 - Use sempre Prepared Statements ou ORMs seguros?
@@ -88,6 +95,7 @@ Com base nas recomendações da OWASP, elabore um checklist para prevenir injeç
   - tratamento de erros sem expor a estrutura do banco
 ```
 ### SQLMap – Testes Automatizados de SQL Injection
+
 ```
 Explore a ferramenta SQLMap, conforme a documentação oficial disponível em https://sqlmap.org.
 - O que é o SQLMap e para que ele serve?
@@ -99,6 +107,7 @@ Explore a ferramenta SQLMap, conforme a documentação oficial disponível em ht
 ```
 
 ### Detecção de Vulnerabilidades com SQLMap
+
 ```
 Utilize o SQLMap para detectar vulnerabilidades em um endpoint Java vulnerável.
 - Como o SQLMap realiza testes de boolean-based, error-based e time-based injection?
@@ -111,6 +120,7 @@ Utilize o SQLMap para detectar vulnerabilidades em um endpoint Java vulnerável.
 ```
 
 ### Extração de Dados com SQLMap
+
 ```
 Aprenda a extrair informações do banco de dados de forma automatizada com SQLMap.
 - Como listar bancos (`--dbs`), tabelas (`--tables`) e colunas (`--columns`)?
@@ -125,6 +135,7 @@ Aprenda a extrair informações do banco de dados de forma automatizada com SQLM
 ```
 
 ### Proteções, Bypasses e Evasão
+
 ```
 Analise as opções de evasão e bypass de proteções implementadas em firewalls e WAFs.
 - O que faz a opção `--tamper`?
@@ -149,6 +160,7 @@ Use o SQLMap em aplicações que exigem autenticação.
 ```
 
 ### Integração com Desenvolvimento Seguro
+
 ```
 Como o SQLMap pode ser incorporado ao ciclo de desenvolvimento seguro.
 - Como a ferramenta pode ser usada em testes de segurança automatizados?
@@ -160,6 +172,7 @@ Como o SQLMap pode ser incorporado ao ciclo de desenvolvimento seguro.
 ```
 
 ### Introdução ao XSStrike
+
 ```
 Explore o que é a ferramenta XSStrike e seu propósito na segurança de aplicações web.
 - O que é o XSStrike e que tipo de vulnerabilidade ele detecta?
@@ -171,6 +184,7 @@ Explore o que é a ferramenta XSStrike e seu propósito na segurança de aplica�
 ```
 
 ### Funcionamento Interno e Heurísticas Inteligentes
+
 ```
 Entenda como o XSStrike analisa e testa parâmetros de entrada.
 - Como o XSStrike realiza fuzzing inteligente usando heurísticas?
@@ -182,6 +196,7 @@ Entenda como o XSStrike analisa e testa parâmetros de entrada.
 ```
 
 ### Testando XSS Refletido com XSStrike
+
 ```
 Utilize o XSStrike para detectar XSS refletido em uma aplicação Java simulada.
 - O que caracteriza um XSS refletido?
@@ -194,6 +209,7 @@ Utilize o XSStrike para detectar XSS refletido em uma aplicação Java simulada.
 ```
 
 ### Testando DOM-Based XSS
+
 ```
 Aplique o XSStrike na tentativa de identificar XSS baseado em DOM.
 - O que diferencia o DOM XSS dos outros tipos?
@@ -206,6 +222,7 @@ Aplique o XSStrike na tentativa de identificar XSS baseado em DOM.
 ```
 
 ### Integração com Web Crawling e Enumeração de Parâmetros
+
 ```
 Utilize recursos de crawling e fuzzing para automatizar a análise com XSStrike.
 - Como o argumento `--crawl` permite encontrar múltiplas URLs exploráveis?
@@ -217,6 +234,7 @@ Utilize recursos de crawling e fuzzing para automatizar a análise com XSStrike.
 ```
 
 ### Bypass de Filtros e Evitação de WAFs
+
 ```
 Investigue como o XSStrike tenta escapar de filtros e regras de WAFs.
 - O que são payloads polimórficos?
