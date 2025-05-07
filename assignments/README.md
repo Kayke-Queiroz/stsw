@@ -1,26 +1,96 @@
-### Resolver desafios do Juice Shop​
 
-1. [Finding the Score Board​](https://pwning.owasp-juice.shop/companion-guide/latest/part2/score-board.html)
-1. [SQL Injection​](https://pwning.owasp-juice.shop/companion-guide/latest/part2/injection.html)
-* Login Admin: Log in with the administrator’s user account.​
-* User Credentials: Retrieve a list of all user credentials via SQL Injection.​
-1. [Cross Site Scripting (XSS)​](https://pwning.owasp-juice.shop/companion-guide/latest/part2/xss.html)
-* Bonus Payload​
-* DOM XSS​
-* Reflected XSS​
+Nesta página você encontra
+1. [Lista de atividades](#lista-de-atividades)
+1. [Instruções gerais para entrega das atividades](#instruções-gerais-para-entrega-das-atividades)
+1. [Instruções para testes locais das atividades](#instruções-para-testes-locais-das-atividades)
+1. [Como compilar, empacotar, decompilar e executar programa java na linha de comando</summary>](#como-compilar-empacotar-decompilar-e-executar-programa-java-na-linha-de-comando)
 
-### Resolver labs do BurpSuite​
+### Lista de atividades
 
-1. SQL injection​
-* [SQL injection vulnerability in WHERE clause allowing retrieval of hidden data​](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
-* [SQL injection vulnerability allowing login bypass​](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
-2. Cross Site Scripting​
-* [Reflected XSS into HTML context with nothing encoded​](https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded)
-* [Stored XSS into HTML context with nothing encoded​](https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded)
-* [DOM XSS in document.write sink using source location.search​](https://portswigger.net/web-security/all-labs#cross-site-scripting:~:text=APPRENTICE-,DOM%20XSS%20in%20document.write%20sink%20using%20source%20location.search,-Not%20solved)
-* [DOM XSS in innerHTML sink using source location.search​](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-innerhtml-sink)
-* [DOM XSS in jQuery anchor href attribute sink using location.search source​](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-href-attribute-sink)
-* [DOM XSS in jQuery selector sink using a hashchange event​](https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-jquery-selector-hash-change-event)
-* [Reflected XSS into attribute with angle brackets HTML-encoded​](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-attribute-angle-brackets-html-encoded)
-* [Stored XSS into anchor href attribute with double quotes HTML-encoded​](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-href-attribute-double-quotes-html-encoded)
-* [Reflected XSS into a JavaScript string with angle brackets HTML encoded​](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-string-angle-brackets-html-encoded)
+| # | Atividades |
+|---|---|
+| 0 | [Hello, World!](./00-hello) |
+| 1 | [Implementar programa do Triângulo](./01-triangle) |
+| 2 | [Implementar casos de testes em Cucumber e Gherkin](./02-triangle-bdd) |
+| 3 | [Implementar casos de testes com métodos blackbox](./03-triangle-black/) |
+| 4 | [Implementar casos de testes com métodos whitebox](./04-triangle-white/) |
+| 5 | [Implementar estudo de caso Test Pyramid](./05-pyramid/) |
+| 6 | [Resolver laboratórios de injection](./06-injection/) |
+
+### Instruções gerais para entrega das atividades
+
+* Realizar fork do repositório da disciplina
+```bash
+gh repo fork fabriciosantana/poo
+```
+* Clonar seu repositório que você acabou de clonar
+```bash
+git clone https://github.com/<seu-usuario>/stsw.git
+```
+* Adicionar o repositório original como remoto
+```bash
+git remote add upstream https://github.com/fabriciosantana/stsw.git
+```
+* Verificar a configuração dos repositórios remotos
+```bash
+git remote -v
+```
+* Atualizar fork para evitar conflitos
+```bash
+git fetch upstream
+git checkout 2025.1
+git merge upstream/2025.1
+```
+
+```bash
+gh repo sync
+```
+* Criar um diretório com seu nome e sobrenome dentro do diretório da atividade, conforme exemplo abaixo(o nome do último diretório deve ser seu nome e sobrenome):
+```bash
+mkdir poo/assignments/00-hello/submissions/fabricio-santana/src  
+```
+* Desenvolver programa Java dentro do seu diretório atendendo os requisitos da especificação e os requisitos de implementação
+* Comitar alterações em seu repositório
+```bash
+git add .   
+git commit -m "minha solução da tarefa"
+git push
+```
+* Enviar um pull request
+```bash
+gh pr create --base 2025.1 --head seu-usuario:2025.1 --title "Minha tarefa XXX" --body "Descrição das alterações realizadas."
+```
+* Observar se os testes do pull request rodaram com sucesso
+* Submeter link do pull request no [ambiente virtual](https://ambientevirtual.idp.edu.br/)
+* Cumprir prazo de entrega
+
+### Instruções para testes locais das atividades
+
+Cada atividade é acompanhada de testes unitários. Para avaliar seu código antes de submetê-lo, execute os seguintes comandos a partir de seu diretório pessoal de cada atividade
+ ```bash
+ mkdir -p lib
+
+ curl -L -o lib/junit-platform-console-standalone-1.11.4.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.11.4/junit-platform-console-standalone-1.11.4.jar
+
+ javac -cp "lib/*" -d bin src/*.java ../../test/*.java
+ 
+ java -jar lib/junit-platform-console-standalone-1.11.4.jar --class-path bin --scan-class-path
+ ```
+
+### Como compilar, empacotar, decompilar e executar programa java na linha de comando</summary>
+
+Execute os comandos abaixo para compilar, empacotar, decompilar e executar programa java na linha de comando 
+
+```bash
+javac -cp "lib/*" -d bin src/*.java test/*.java
+
+java -cp bin/ HelloWorld
+
+java -jar lib/junit-platform-console-standalone-1.11.4.jar execute --class-path target --scan-class-path
+
+jar --create --file bin/HelloWorld.jar --main-class HelloWorld -C bin/ HelloWorld.class
+
+java -jar bin/HelloWorld.jar
+
+javap -cp bin/ -c HelloWorld
+```
