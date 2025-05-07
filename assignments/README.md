@@ -89,4 +89,8 @@ javap -cp bin/ -c HelloWorld
 |---|---|
 | 0 | [Hello, World!](./00-hello) |
 | 1 | [Implementar programa do Triângulo](./01-triangle) |
-| 2 | [Implementar casos de testes em Cucumber e Gherkin com técnica BVA ](./02-triangle-bdd) |
+| 2 | [Implementar casos de testes em Cucumber e Gherkin](./02-triangle-bdd) |
+| 3 | [Implementar casos de testes com métodos blackbox](./03-triangle-black/) |
+| 4 | [Implementar casos de testes com métodos whitebox](./04-triangle-white/) |
+| 5 | [Implementar estudo de caso Test Pyramid](./05-pyramid/) |
+| 5 | [Resolver laboratórios de injection](./06-injection/) |
