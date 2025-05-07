@@ -1,9 +1,21 @@
 
 Nesta página você encontra
+1. [Lista de atividades](#lista-de-atividades)
 1. [Instruções gerais para entrega das atividades](#instruções-gerais-para-entrega-das-atividades)
 1. [Instruções para testes locais das atividades](#instruções-para-testes-locais-das-atividades)
 1. [Como compilar, empacotar, decompilar e executar programa java na linha de comando</summary>](#como-compilar-empacotar-decompilar-e-executar-programa-java-na-linha-de-comando)
-1. [Lista de atividades](#lista-de-atividades)
+
+### Lista de atividades
+
+| # | Atividades |
+|---|---|
+| 0 | [Hello, World!](./00-hello) |
+| 1 | [Implementar programa do Triângulo](./01-triangle) |
+| 2 | [Implementar casos de testes em Cucumber e Gherkin](./02-triangle-bdd) |
+| 3 | [Implementar casos de testes com métodos blackbox](./03-triangle-black/) |
+| 4 | [Implementar casos de testes com métodos whitebox](./04-triangle-white/) |
+| 5 | [Implementar estudo de caso Test Pyramid](./05-pyramid/) |
+| 6 | [Resolver laboratórios de injection](./06-injection/) |
 
 ### Instruções gerais para entrega das atividades
 
@@ -82,11 +94,3 @@ java -jar bin/HelloWorld.jar
 
 javap -cp bin/ -c HelloWorld
 ```
-
-### Lista de atividades
-
-| # | Atividades |
-|---|---|
-| 0 | [Hello, World!](./00-hello) |
-| 1 | [Implementar programa do Triângulo](./01-triangle) |
-| 2 | [Implementar casos de testes em Cucumber e Gherkin com técnica BVA ](./02-triangle-bdd) |
