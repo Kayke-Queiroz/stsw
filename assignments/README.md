@@ -15,7 +15,7 @@ Nesta página você encontra
 | 3 | [Implementar casos de testes com métodos blackbox](./03-triangle-black/) |
 | 4 | [Implementar casos de testes com métodos whitebox](./04-triangle-white/) |
 | 5 | [Implementar estudo de caso Test Pyramid](./05-pyramid/) |
-| 5 | [Resolver laboratórios de injection](./06-injection/) |
+| 6 | [Resolver laboratórios de injection](./06-injection/) |
 
 ### Instruções gerais para entrega das atividades
 
