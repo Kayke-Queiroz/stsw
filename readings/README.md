@@ -26,8 +26,7 @@ Nesta página você encontra:
 ### Leituras sobre desenvolvimento seguro de software
 
 1. [What is software security and why is it important?](https://onedrive.live.com/?authkey=%21AKhjtRDfcvidngw&cid=187D9A0EB7D8E7F9&id=187D9A0EB7D8E7F9%2111440&parId=187D9A0EB7D8E7F9%2111325&o=OneUp)
-
-
+1. [Systematic Mapping of the Literature on Secure Software Development​](https://onedrive.live.com/?authkey=%21AFxrS7LvqbGQhCg&cid=187D9A0EB7D8E7F9&id=187D9A0EB7D8E7F9%2111444&parId=187D9A0EB7D8E7F9%2111325&o=OneUp)
 
 ### Leituras extras
 
