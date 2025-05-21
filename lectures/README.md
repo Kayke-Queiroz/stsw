@@ -22,6 +22,9 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 16 | Uso de IA no teste de software | | 
 | 17 | [Introdução do desenvolvimento seguro de software](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBjmLQAAAAAB1TpIuG2JnM9Gti7brQn5_A?e=WrRbqC) | |
 | 18 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Injection](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBgoLgAAAAAB_MgPMXXrQld7uAqBOMj3sw?e=JKvX9U) | |
+| 19 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - SSRF](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBg_LgAAAAABJnu6GhYXBkJ5CCFod4ApNA?e=vv2jdd) | |
+| 20 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Identification and Authentication Failures e Broken Access Control](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBg9LgAAAAABkmQvuv_uWQ-RMxDrrXQvew?e=ASQSw3) | |
+
 
 ## Referências
 

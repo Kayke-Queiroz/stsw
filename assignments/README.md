@@ -16,6 +16,8 @@ Nesta página você encontra
 | 4 | [Implementar casos de testes com métodos whitebox](./04-triangle-white/) |
 | 5 | [Implementar estudo de caso Test Pyramid](./05-pyramid/) |
 | 6 | [Resolver laboratórios de injection](./06-injection/) |
+| 7 | [Resolver laboratórios de ssrf](./07-ssrf//) |
+| 8 | [Resolver laboratórios de identification and authentication e Broken Access Control](./08-access//) |
 
 ### Instruções gerais para entrega das atividades
 
