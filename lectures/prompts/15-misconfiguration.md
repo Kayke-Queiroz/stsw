@@ -1,5 +1,9 @@
 ## Security Misconfiguration (A05:2021)
 
+Referências:
+
+* [OWASP Top Ten - Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
+
 ### Introdução à Vulnerabilidade Security Misconfiguration 
 
 ```

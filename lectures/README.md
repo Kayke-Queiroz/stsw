@@ -1,4 +1,13 @@
-## Slides da Disciplina
+
+Nesta página você encontra:
+
+1. [Slides das aulas](#slides-das-aulas)
+2. [Referências](#referências)
+    - [Livros](#livros)
+    - [Artigos](#artigos)
+    - [Cursos](#cursos)
+
+### Slides das aulas
 
 Aqui você encontrará referência para os slides utilizados ao longo do curso.
 
@@ -24,13 +33,15 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 18 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Injection](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBgoLgAAAAAB_MgPMXXrQld7uAqBOMj3sw?e=JKvX9U) | |
 | 19 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - SSRF](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBg_LgAAAAABJnu6GhYXBkJ5CCFod4ApNA?e=vv2jdd) | |
 | 20 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Identification and Authentication Failures e Broken Access Control](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBg9LgAAAAABkmQvuv_uWQ-RMxDrrXQvew?e=ASQSw3) | |
+| 21 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Security Misconfiguration, Vulnerable and Outdated Components, Software and Data Integrity Failures and Security Logging and Monitoring Failures](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBhuLgAAAAABH8BrytTA3kYTTbIzVPNsRQ?e=vK5YkK) | |
+| 22 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Cryptographic Failures e Insecure Design](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBh8LgAAAAABqOjQiP8j81D5qydneWQHLg?e=X9KjVO) | |
 
 
-## Referências
+### Referências
 
 Referências de livros, artigos, cursos e outros materiais utilizados na disciplina.
 
-### Livros
+#### Livros
 
 * HOMÈS, BERNARD. **Fundamentals of Software Testing**. 2ª ed. Revised and Updated. Wiley-ISTE, 2024.
 * SMART, JOHN FERGUSON; MOLAK, JAN. **BDD in Action. Manning**, 2023.
@@ -42,9 +53,9 @@ Referências de livros, artigos, cursos e outros materiais utilizados na discipl
 * OLMSTED, Aspen. **Security-Driven Software Development: Learn to Analyze and Mitigate Risks in Your Software Projects**. Packt Publishing, 2024.
 * ANDERSON, Ross. **Security Engineering: A Guide to Building Dependable Distributed Systems**. John Wiley & Sons Inc, 2021.
 
-### Artigos
+#### Artigos
 
 * BOEHM, BARRY. Guidelines for Verifying and Validating Software Requirements and Design Specifications.
 * NIST. Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities. NIST SP 800-218, 2022.
 
-### Cursos  
+#### Cursos  
