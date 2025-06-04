@@ -88,6 +88,7 @@ Simule um cenário onde uma aplicação vulnerável permite a inserção de uma 
 
 - Documente a atividade com capturas de tela, códigos utilizados e conclusões da exploração e mitigação.
 ```
+
 ### Conclusão
 
 ```
