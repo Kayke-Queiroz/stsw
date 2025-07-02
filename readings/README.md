@@ -25,9 +25,8 @@ Nesta página você encontra:
 1. [What is software security and why is it important?](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Ecu9yrGVw1NKi12SZ0GL75gBjmd4Rd_Y_cEZpkgnBCf78w?e=x8RLar)
 1. [Systematic Mapping of the Literature on Secure Software Development​](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBi0LAAAAAABO7EyNY6RoG_j-aX3iOK0FQ?e=cXEieQ)
 1. [Secure Software Development Best Practices](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBiwLAAAAAABZJN0XCvM4H5HwzYCQDpudA?e=YlVYMQ)
-1. [Essential Activities For Secure Software Development](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBiwLAAAAAABZJN0XCvM4H5HwzYCQDpudA?e=RBONhd)
+1. [Essential Activities For Secure Software Development](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBi-LAAAAAAB4_1lPk0WOBnBtaq9clId9A?e=Caq8oM)
 1. [AI Test Generation: A Dev’s Guide Without Shooting Yourself in the Foot](https://foojay.io/today/ai-driven-testing-best-practices/)
-
 
 ### Leituras extras
 
