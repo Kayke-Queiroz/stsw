@@ -71,13 +71,46 @@ Verifique se o XSStrike está funcionando corretamente.
 ```bash
 xsstrike --help
 ```
-### Exploração Inicial
-**Alvo:** http://testphp.vulnweb.com/ 
 
-Execute o scan inicial para descobrir vulnerabilidades XSS.
+### Exploração de Laboratório: PortSwigger Reflected XSS
+
+Este guia apresenta o fluxo de trabalho profissional para resolver um laboratório de XSS, combinando análise manual com a automação do XSStrike.
+
+**Alvo:** Um laboratório de "Reflected XSS" da PortSwigger Web Security Academy.
+
+#### Passo 1: Análise Manual e Descoberta do Vetor
+
+O primeiro passo é sempre entender a aplicação manualmente.
+
+1. Abra a URL do laboratório no seu navegador.
+2. Use a funcionalidade de busca e digite um valor de teste, como `testando`.
+3. Observe a URL resultante. Ela deve se parecer com: `https://<ID_DO_LAB>.web-security-academy.net/?search=testando`
+4. Confirme que a palavra `testando` aparece no corpo da página.
+
+Com isso, identificamos o parâmetro `search` como nosso ponto de injeção.
+
+#### Passo 2: Scan Focado com XSStrike
+
+Agora, aponte o XSStrike diretamente para o alvo que descobrimos.
+
+Use aspas simples `' '` para garantir que o terminal não modifique caracteres especiais na URL.
 
 ```bash
-xsstrike -u "http://testphp.vulnweb.com/" --crawl
+xsstrike -u 'https://<ID_DO_LAB>.web-security-academy.net/?search=test'
+```
+
+#### Passo 3: Análise do Resultado
+
+O XSStrike irá testar diversos vetores e deve retornar um payload bem-sucedido.
+
+**Saída Esperada:**
+
+```
+[!] Reflections found: 1
+[~] Analysing reflections
+[~] Generating payloads
+[+] Payload: <hTmL%0aonmouSeoVER%0d=%0dconfirm()%0dx>
+...
 ```
 
 ## Lista de Frameworks Similares
