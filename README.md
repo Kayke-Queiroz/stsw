@@ -2,7 +2,7 @@
 
 Seja bem-vindo(a)! 🤗
 
-Este repositório reúne materiais, tarefas, projetos, leituras e referências bibliográficas da disciplina **Segurança e Teste de Software**, oferecida no 6º semestre da graduação em Engenharia de Software do **[Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa](http://idp.edu.br)** e ministrada pelo professor **[Fabricio Santana](https://github.com/fabriciosantana/)** no **1º semestre de 2025**. 👨🏾‍🏫
+Este repositório reúne materiais, tarefas, projetos, leituras e referências bibliográficas da disciplina **Segurança e Teste de Software**, oferecida no 6º semestre da graduação em Engenharia de Software do **[Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa](http://idp.edu.br)** e ministrada pelo professor **[Fabricio Santana](https://github.com/fabriciosantana/)** no **2º semestre de 2025**. 👨🏾‍🏫
 
 Vamos começar! 🎉
 
