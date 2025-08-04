@@ -9,7 +9,7 @@ Nesta página você encontra:
 
 * Escrever manualmente o resumo em folhar A4 branca
 * Fazer Fork do repositório da disciplina, caso ainda não tenha feitp
-* Digitalizar em PDF e gravar no diretório poo/readings/01/seunome-seusobrenome.pdf
+* Digitalizar em PDF e gravar no diretório stsw/readings/XX-NNNN/seunome-seusobrenome.pdf
 * Enviar Pull Request para o repositório da disciplina
 * Submeter link do Pull Request no [Ambiente Virtual](https://ambientevirtual.idp.edu.br/)
 * Entregar o resumo físico em mãos na sala de aula
