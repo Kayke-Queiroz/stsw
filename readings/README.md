@@ -2,7 +2,7 @@
 Nesta página você encontra:
 
 1. [Procedimento para entrega das leituras](#procedimento-para-entrega-das-leituras)
-1. [Leituras sobre teste de software](#leituras-sobre-teste-de-software)
+1. [Leituras sobre segurança e teste de software](#leituras-sobre-teste-de-software)
 1. [Leituras extras](#leituras-extras)
 
 ### Procedimento para entrega das leituras
