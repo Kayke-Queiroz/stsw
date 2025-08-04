@@ -1,5 +1,6 @@
 
-Finalizada as devidas introduções, vamos seguir para a instalação das ferramentas com os passos abaixo:
+### Instruções sobre como configurar ferramentas
+
 * [Instalação do OpenJDK 21 no Linux via apt](./01a-install-openjdk21-apt.md)
     * (opcional) [Instalação manual do OpenJDK 21 no Linux](./01b-install-openjdk21-manual.md)
     * (opcional) [Instalação do OpenJDK 21 no Linux via SDKMAN!](./01c-install-openjdk21-sdkman.md)
