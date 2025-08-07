@@ -12,7 +12,6 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 1 | [Apresentação da disciplina e contextualização](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBi8LAAAAAABlv9LMiX7LIShD2BVfNIJ6Q?e=2Rm4eX) | |
 | 2 | [Validação e verificação de Software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | [Configuração do ambiente java](../howto/) e execução do [Hello, World!](./examples/00-hello) |
 
-
 ### Slides das aulas (EM REVISÃO)
 | 3 | [Noções de BDD, Cucumber e Gherkin](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR) | [Demonstração de execução de testes com Cucumber, Junit e Maven](./examples/02-hello-cucumber-maven) |
 | 4 | [Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
