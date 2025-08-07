@@ -4,15 +4,11 @@ Execute os comandos abaixo para compilar, empacotar, decompilar e executar progr
 
 * Compilar o código do programa e dos testes unitários. O código do teste unitário já é fornecido.
 ```bash
-javac -cp "lib/*" -d bin src/*.java test/*.java
+javac -cp "lib/*" -d bin src/*.java ../../test/*.java
 ```
 * Executar programa java
 ```bash
 java -cp bin/ HelloWorld
-```
-* Executar testes unitários e verificar o resultado no console
-```bash
-java -jar lib/junit-platform-console-standalone-1.11.4.jar execute --class-path target --scan-class-path
 ```
 * Criar um jar com o programa
 ```bash
