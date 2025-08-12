@@ -7,7 +7,7 @@ Nesta página você encontra:
 
 Aqui você encontrará referência para os slides utilizados ao longo do curso.
 
-|#| Conteúdo | Atividade em sala|
+|#| Conteúdo | Atividade em sala |
 |---|---|---|
 | 1 | [Apresentação da disciplina e contextualização](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBi8LAAAAAABlv9LMiX7LIShD2BVfNIJ6Q?e=2Rm4eX) | |
 | 2 | [Configuração de ambiente e visão geral sobre o github e procedimento para submissão de tarefas]() | [Configuração do ambiente java](../howto/) e execução do [Hello, World!](./examples/00-hello) |
