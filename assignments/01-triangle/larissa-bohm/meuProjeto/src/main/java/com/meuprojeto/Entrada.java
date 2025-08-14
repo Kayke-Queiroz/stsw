@@ -15,7 +15,7 @@ public class Entrada {
         int valor;
 
         while (true) {
-            System.out.print("Digite " + nome + ": ");
+            System.out.println("Digite " + nome + ": ");
             if (scanner.hasNextInt()) {
                 valor = scanner.nextInt();
                 if (valor >= 1 && valor <= 200) {
@@ -24,7 +24,7 @@ public class Entrada {
                     System.out.println("Erro: O valor não está entre 1 e 200.");
                 }
             } else {
-                System.err.println("Erro: o valor não é um inteiro válido. Por favor, digite outro número:");
+                System.out.println("Erro: o valor não é um inteiro válido. Por favor, digite outro número:");
                 scanner.next();
             }
         }

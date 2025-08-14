@@ -24,13 +24,13 @@ public class Triangulo {
     // Classificação do triângulo
     public String tipo() {
         if (!validacao()) {
-            return "Não é triangulo";
+            return "Nao e triangulo";
         } else if (a == b && b == c) {
-            return "Triangulo Equilatero";
+            return "Equilatero";
         } else if (a == b || b == c || a == c) {
-            return "Triangulo Isoceles";
+            return "Isoceles";
         } else {
-            return "Triangulo Escaleno";
+            return "Escaleno";
         }
     }
 }
