@@ -21,17 +21,17 @@ public class TriangleClassifier {
     }
 
     public static String classificarTriangulo(int a, int b, int c) {
-        // Validação de lados positivos
+
         if (a <= 0 || b <= 0 || c <= 0) {
             return "Lados inválidos";
         }
 
-        // Validação da condição de triângulo
+      
         if (a + b <= c || a + c <= b || b + c <= a) {
             return "Não é um triângulo";
         }
 
-        // Classificação do triângulo
+     
         if (a == b && b == c) {
             return "Equilátero";
         } else if (a == b || a == c || b == c) {
