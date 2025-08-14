@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class Entrada {
 
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Entrada(Scanner scanner) {
+        this.scanner = scanner;
+    }
 
     public int lerValor(String nome) {
 
-        // 1. Entrada de Dados
         int valor;
 
         while (true) {
