@@ -1,12 +1,10 @@
-package br.edu.idp.stsw.unittest.tests;
+package br.edu.idp.stsw.unittest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import br.edu.idp.stsw.unittest.Calculator;
 
 class CalculatorTest {
 
