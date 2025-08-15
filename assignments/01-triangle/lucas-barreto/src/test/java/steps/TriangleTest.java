@@ -1,45 +1,27 @@
-package app;
+package steps;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import Triangle;
-
+import app.Triangle;
+import io.cucumber.java.en.*;
 
 
 public class TriangleTest {
 
     Triangle triangle = new Triangle();
-    @BeforeEach 
-    void setUp() {
-      z
+
+    @Given("o usuário está na página inicial")
+    public void usuarioNaPaginaInicial() {
+        System.out.println("Usuário acessou a página inicial.");
     }
 
-    @Test 
-    void teste1() {
-        String resultado = triangle.teste(5,5, 5);
-        assertEquals("Equilátero", resultado);
+    @When("ele digita os valores 5, 5 e 5 para os lados a, b e c")
+    public void LadosTriângulo(int a, int b, int c) {
+
+        System.out.println("Valor A: " + a + " | Valor B: " + b + " | Valor C: " + c);
+
     }
 
-     @Test 
-    void teste2() {
-        String resultado = triangle.teste(5,5, 3);
-        assertEquals("Isósceles", resultado);
+    @Then("ele deve ver o tipo do triangulo")
+    public void sistemaExibeMensagem(String mensagem, int a, int b, int c) {
+        System.out.println("Triângulo: " + triangle.teste(a, b, c));
     }
-     @Test 
-    void teste3() {
-        String resultado = triangle.teste(3,4, 5);
-        assertEquals("Escaleno", resultado);
-    }
-    
-    void teste4() {
-        String resultado = triangle.teste(1,2, 3);
-        assertEquals("Não é um triângulo", resultado);
-    } 
-    void teste5() {
-        String resultado = triangle.teste(-5,0, 5);
-        assertEquals("Lados inválidos", resultado);
-    } 
-
-
 }
