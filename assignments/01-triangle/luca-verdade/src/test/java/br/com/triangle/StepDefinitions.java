@@ -1,3 +1,5 @@
+package br.com.triangle;
+
 import io.cucumber.java.en.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +17,8 @@ public class StepDefinitions {
 
     @When("eu classifico o triângulo")
     public void eu_classifico_o_triangulo() {
-        resultado = TriangleClassifier.classificarTriangulo(a, b, c);
+        // Chamando o método correto da sua classe principal
+        resultado = TriangleClassifier.classify(a, b, c);
     }
 
     @Then("o resultado deve ser {string}")
