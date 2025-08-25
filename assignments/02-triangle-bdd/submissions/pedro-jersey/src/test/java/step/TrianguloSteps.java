@@ -1,6 +1,7 @@
 package com.triangulo;
 
 import static org.junit.Assert.assertEquals;
+
 import io.cucumber.java.pt.*;
 
 public class TrianguloSteps {
