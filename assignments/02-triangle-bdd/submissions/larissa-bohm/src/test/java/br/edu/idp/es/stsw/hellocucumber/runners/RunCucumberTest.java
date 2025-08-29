@@ -1,12 +1,14 @@
 package br.edu.idp.es.stsw.hellocucumber.runners;
 
-import io.cucumber.core.cli.Main;
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 
-public class RunCucumberTest {
-        public static void main(String[] args) {
-        Main.main(new String[]{
-            "-g", "br.edu.idp.es.stsw.hellocucumber.steps",
-            "src/test/resources/features"
-        });
-    }
-}
+@RunWith(Cucumber.class)
+@CucumberOptions(
+    features = "src/test/resources/features",
+    glue = {"br.edu.idp.es.stsw.hellocucumber.steps"},
+    plugin = {"pretty"},
+    monochrome = true
+)
+public class RunCucumberTest { }

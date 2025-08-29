@@ -13,19 +13,19 @@ public class TrianguloSteps {
     private String result;
 
     @Given("I have the sides {int}, {int}, and {int}")
-    public void lados_do_triangulo(int a, int b, int c){
+    public void i_have_the_sides(Integer a, Integer b, Integer c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    @When(I classify the triangle)
-    public void eu_classifico_triangulo() {
-        resultado = Triangulo.classificar(a,b,c);
+    @When("I classify the triangle")
+    public void i_classify_the_triangle() {
+        result = Triangulo.classificar(a, b, c);
     }
 
     @Then("the result should be {string}")
-    public void o_resultado_deveria(String esperado) {
-        assertEquals(esperado, resultado);
+    public void the_result_should_be(String expected) {
+        assertEquals(expected, result);
     }
 }
