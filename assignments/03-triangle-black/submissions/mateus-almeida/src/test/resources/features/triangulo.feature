@@ -19,7 +19,7 @@ Feature: Classificação de Triângulos
       | 10  | 10  | 201 | Lados invalidos    |
       | 1   | 1   | 1   | Equilátero         |
       | 1   | 2   | 2   | Isósceles          |
-      | 2   |  10| 4   | Não é um triângulo |
+      | 2   | 10  | 4   | Não é um triângulo |
       | 200 | 200 | 200 | Equilátero         |
       | 200 | 200 | 199 | Isósceles          |
       | 200 | 199 | 198 | Escaleno           |

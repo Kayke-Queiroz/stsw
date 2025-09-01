@@ -12,4 +12,3 @@ import io.cucumber.junit.CucumberOptions;
 )
 public class RunCucumberTest {
 }
-sds
