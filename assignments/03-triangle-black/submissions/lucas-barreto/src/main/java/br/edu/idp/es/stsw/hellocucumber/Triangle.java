@@ -1,4 +1,4 @@
-package app;
+package br.edu.idp.es.stsw.triangle;
 public class Triangle {
 
     public static void main() {
@@ -8,8 +8,8 @@ public class Triangle {
 
 public static String teste(int a, int b, int c){
             if(a < 0 || b < 0 || c < 0) {
-                System.err.println("Lados inválidos");
-                System.exit(1);
+                return "Lados inválidos";
+                //System.exit(1);
             }
 
             
