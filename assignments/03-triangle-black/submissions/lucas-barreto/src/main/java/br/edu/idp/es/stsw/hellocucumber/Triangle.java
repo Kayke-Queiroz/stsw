@@ -7,7 +7,7 @@ public class Triangle {
 }
 
 public static String teste(int a, int b, int c){
-            if(a < 0 || b < 0 || c < 0) {
+            if(a <= 0 || b <= 0 || c <= 0) {
                 return "Lados inválidos";
                 //System.exit(1);
             }
