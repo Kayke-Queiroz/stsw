@@ -76,3 +76,10 @@ java -cp "lib/*:bin" io.cucumber.core.cli.Main src/test/resources/features --glu
 ```bash 
 java -cp "lib/*:bin:src/test/resources/features" io.cucumber.core.cli.Main
 ```
+
+
+curl -L -o lib/junit-jupiter-5.12.0.jar https://repo1.maven.org/maven2/org/junit/jupiter/junit-jupiter/5.12.0/junit-jupiter-5.12.0.jar
+
+curl -L -o lib/junit-platform-commons-1.13.4.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-commons/1.13.4/junit-platform-commons-1.13.4.jar
+
+curl -L -o lib/apiguardian-api-1.1.2.jar https://repo1.maven.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
