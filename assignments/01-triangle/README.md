@@ -74,21 +74,6 @@ O problema do triângulo envolve a criação de um programa que determina o tipo
 - O programa deve ser capaz de identificar corretamente o tipo de triângulo para qualquer combinação válida de lados.
 - O programa deve detectar e informar corretamente quando os lados fornecidos não podem formar um triângulo.
 - O programa deve lidar com entradas inválidas (como números negativos ou zero) e fornecer uma mensagem de erro adequada.
-- O código deve ser acompanhado por um conjunto de testes automatizados, usando frameworks como `unittest`, `pytest` ou `behave`, para garantir a precisão da implementação.
-
-### 4. Testes Automatizados
-
-- **Teste de Validação de Triângulo**:
-  - Verificar se os lados fornecidos formam um triângulo válido.
-  - Testar condições de falha onde os lados não formam um triângulo.
-
-- **Teste de Classificação**:
-  - Testar a classificação correta para triângulos equiláteros, isósceles e escalenos.
-  - Verificar se o programa retorna "Não é um triângulo" para combinações inválidas.
-
-- **Teste de Limites**:
-  - Verificar o comportamento do programa com valores extremos, como 1, 2, 3 ou números muito grandes.
-  - Garantir que o programa lida corretamente com entradas como `0`, números negativos e valores não inteiros.
 
 ### 5. Ferramentas e Tecnologias
 
