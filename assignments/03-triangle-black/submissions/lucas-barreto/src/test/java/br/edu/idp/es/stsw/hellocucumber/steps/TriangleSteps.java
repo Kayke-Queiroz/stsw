@@ -1,6 +1,6 @@
-package steps;
+package br.edu.idp.es.stsw.triangle.steps;
 
-import app.Triangle;
+import br.edu.idp.es.stsw.triangle.Triangle;
 import io.cucumber.java.en.*;
 
 
