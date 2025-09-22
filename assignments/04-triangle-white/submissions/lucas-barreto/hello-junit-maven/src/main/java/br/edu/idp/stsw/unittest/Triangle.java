@@ -1,4 +1,5 @@
-package br.edu.idp.es.stsw.triangle;
+package br.edu.idp.stsw.unittest;
+
 public class Triangle {
 
     public static void main() {
