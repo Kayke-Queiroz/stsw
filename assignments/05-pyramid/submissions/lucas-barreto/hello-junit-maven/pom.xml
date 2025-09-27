@@ -63,7 +63,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>br.edu.idp.es.stsw.Calculator</mainClass>
+                            <mainClass>br.edu.idp.es.stsw.Triangle</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -81,7 +81,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>br.edu.idp.es.stsw.test.CalculatorTest</mainClass>
+                <mainClass>br.edu.idp.es.stsw.test.TriangleTest</mainClass>
                 <classpathScope>test</classpathScope>
             </configuration>
         </plugin>

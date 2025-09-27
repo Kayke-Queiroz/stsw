@@ -1,9 +1,10 @@
-package steps;
+package br.edu.idp.es.stsw.test;
 
-import app.Triangle;
+import br.Triangle;
 import io.cucumber.java.en.*;
 
 
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TriangleSteps {
