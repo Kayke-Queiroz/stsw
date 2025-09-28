@@ -1,16 +1,17 @@
-package app;
+package br.edu.idp.stsw.unittest;
+
 public class Triangle {
 
-   
-    public static void main(String[] args) {
-        int a = 3, b = 4, c = 5;
-        System.out.println(teste(a, b, c));  
-    }
+    public static void main() {
+        int a = 0, b = 0, c = 0;
+        Triangle.teste(a, b, c);
+}
 
 public static String teste(int a, int b, int c){
-            if(a < 0 || b < 0 || c < 0) {
-                return("Lados inválidos");
-               }
+            if(a <= 0 || b <= 0 || c <= 0) {
+                return "Lados inválidos";
+                //System.exit(1);
+            }
 
             
 
@@ -20,7 +21,7 @@ public static String teste(int a, int b, int c){
                     return "Equilátero";
                 }
                 else if (a == b || a == c || b == c ) {
-                    return "Isósceles";
+                    System.out.println("Isósceles");
                 }
                 else {
                     return "Escaleno";
@@ -30,6 +31,8 @@ public static String teste(int a, int b, int c){
             else {
                 return "Não é um Triângulo";
             }
+            
+            return "Finish";
     }
 
 }

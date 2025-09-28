@@ -3,12 +3,12 @@ Feature: Teste de Piramide
   Scenario: Triangulo Equilátero
     Given o usuário esta na página inicial
     When ele digita os valores 5 5 e 5 para os lados a b e c
-    Then ele deve ver o tipo do triângulo: Equilatero
+    Then ele deve ver o tipo do triângulo: Equilátero
 
   Scenario: Triangulo Isósceles
     Given o usuário esta na página inicial
     When ele digita os valores 5 5 e 3 para os lados a b e c
-    Then ele deve ver o tipo do triângulo: Isosceles
+    Then ele deve ver o tipo do triângulo: Isósceles
  
  Scenario: Triangulo Escaleno
     Given o usuário esta na página inicial

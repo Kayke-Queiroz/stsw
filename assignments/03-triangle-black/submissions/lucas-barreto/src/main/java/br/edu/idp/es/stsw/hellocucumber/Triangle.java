@@ -20,7 +20,7 @@ public static String teste(int a, int b, int c){
                     return "Equilátero";
                 }
                 else if (a == b || a == c || b == c ) {
-                    System.out.println("Isósceles");
+                    return "Isósceles";
                 }
                 else {
                     return "Escaleno";
@@ -31,7 +31,6 @@ public static String teste(int a, int b, int c){
                 return "Não é um Triângulo";
             }
             
-            return "Finish";
     }
 
 }
