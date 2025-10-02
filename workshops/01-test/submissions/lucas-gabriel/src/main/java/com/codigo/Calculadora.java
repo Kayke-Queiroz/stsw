@@ -17,7 +17,17 @@ public class Calculadora {
     public int divide(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Não pode dividir por zero!");
-        }
+        } 
+
         return a / b;
+    }
+
+    public int potencia(int a, int b) {
+        int potencia = a;
+        int i = 1;
+        for(i = 0; i < b; i++) {
+            potencia = potencia * b;
+        }
+        return potencia;
     }
 }

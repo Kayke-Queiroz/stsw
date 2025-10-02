@@ -12,10 +12,11 @@ public class CalculadoraTest {
         assertEquals(5, calculadora.soma(2, 3));
     }
 
-    @Test
+   @Test
     public void testSubtrai() {
-        assertEquals(1, calculadora.subtrai(3, 2));
+        assertEquals(5, calculadora.subtrai(2, 3));
     }
+
 
     @Test
     public void testMultiplica() {
@@ -30,5 +31,10 @@ public class CalculadoraTest {
     @Test(expected = ArithmeticException.class)
     public void testDividePorZero() {
         calculadora.divide(1, 0);
+    }
+
+    @Test
+    public void testPotencia() {
+        assertEquals(9, calculadora.potencia(3, 2));
     }
 }
