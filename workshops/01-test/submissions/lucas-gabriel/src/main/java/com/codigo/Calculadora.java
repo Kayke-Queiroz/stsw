@@ -23,10 +23,10 @@ public class Calculadora {
     }
 
     public int potencia(int a, int b) {
-        int potencia = a;
+        int potencia = 1;
         int i = 1;
         for(i = 0; i < b; i++) {
-            potencia = potencia * b;
+            potencia = potencia * a;
         }
         return potencia;
     }
