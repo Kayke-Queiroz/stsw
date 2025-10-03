@@ -76,3 +76,4 @@ public class LoginBoundaryTest {
         Assertions.assertThat(steps.estaNaPaginaDeProdutos()).isFalse(); // FALHA INTENCIONAL
     }
 }
+

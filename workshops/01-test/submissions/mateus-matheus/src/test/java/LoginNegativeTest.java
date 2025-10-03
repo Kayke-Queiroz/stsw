@@ -1,3 +1,13 @@
+/**
+ * TESTES NEGATIVOS - LoginNegativeTest
+ * 
+ * Estes testes verificam comportamentos esperados quando algo dá errado:
+ * - Credenciais inválidas → deve mostrar mensagem de erro
+ * - Campos vazios → deve solicitar preenchimento
+ * - Usuário bloqueado → deve impedir acesso
+ * 
+ * Objetivo: Garantir que a aplicação trata erros adequadamente
+ */
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -69,5 +79,6 @@ public class LoginNegativeTest {
         Assertions.assertThat(mensagemErro).contains("Sorry, this user has been locked out");
     }
 }
+
 
 

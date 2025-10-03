@@ -1,3 +1,12 @@
+/**
+ * TESTES ADICIONAIS - LoginMoreTests
+ * 
+ * Demonstra diferentes tipos de usuários testados:
+ * - Usuário Performance (mais lento para teste de carga)
+ * - Usuário Problemático (para identificar bugs na aplicação)
+ * - Testes negativos (credenciais inválidas)
+ * - Usuário Visual (para demonstrações de UI)
+ */
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -7,6 +16,7 @@ import org.assertj.core.api.Assertions;
 @ExtendWith(SerenityJUnit5Extension.class)
 public class LoginMoreTests {
 
+    // Reutilização dos Steps - demonstra código DRY (Don't Repeat Yourself)
     LoginSteps steps = new LoginSteps();
 
     @Test
@@ -78,3 +88,4 @@ public class LoginMoreTests {
         Assertions.assertThat(steps.estaNaPaginaDeProdutos()).isTrue();
     }
 }
+
