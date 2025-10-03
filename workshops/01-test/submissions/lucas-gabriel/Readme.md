@@ -1,6 +1,6 @@
 # 🎯 Cobertura - Testes com Cobertura em Java
 
-Framework Utilizado: Cobertura (versão X.Y.Z)
+Framework Utilizado: Cobertura
 Alunos: Lucas e Gabriel
 
 ## 📝 Introdução
