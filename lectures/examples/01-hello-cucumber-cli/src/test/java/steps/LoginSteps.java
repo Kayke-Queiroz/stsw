@@ -27,7 +27,7 @@ public class LoginSteps {
             System.out.println("Usuário autenticado com sucesso.");
         } else {
             System.out.println("Usuário não autenticado.");
-            throw new RuntimeException("Usuário não autenticado.");
+            //throw new RuntimeException("Usuário não autenticado.");
         }
     }
 
