@@ -14,7 +14,7 @@ public class CalculadoraTest {
 
    @Test
     public void testSubtrai() {
-        assertEquals(5, calculadora.subtrai(2, 3));
+        assertEquals(1, calculadora.subtrai(3, 2));
     }
 
 
