@@ -17,6 +17,7 @@ public class StepDefinitions {
 
     @When("eu classifico o triângulo")
     public void eu_classifico_o_triangulo() {
+        // Chamando o método correto da sua classe principal
         resultado = TriangleClassifier.classify(a, b, c);
     }
 
