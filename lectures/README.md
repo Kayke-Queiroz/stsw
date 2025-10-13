@@ -26,7 +26,6 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 14 | [Introdução do desenvolvimento seguro de software](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBjmLQAAAAAB1TpIuG2JnM9Gti7brQn5_A?e=WrRbqC) | |
 | 15 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Injection](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBgoLgAAAAAB_MgPMXXrQld7uAqBOMj3sw?e=JKvX9U) | |
 
-
 ### Slides das aulas (EM REVISÃO)
 |#| Conteúdo | Atividade em sala|
 |---|---|---|
