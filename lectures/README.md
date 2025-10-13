@@ -37,4 +37,3 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 | 20 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Identification and Authentication Failures e Broken Access Control](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBg9LgAAAAABkmQvuv_uWQ-RMxDrrXQvew?e=ASQSw3) | |
 | 21 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Security Misconfiguration, Vulnerable and Outdated Components, Software and Data Integrity Failures and Security Logging and Monitoring Failures](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBhuLgAAAAABH8BrytTA3kYTTbIzVPNsRQ?e=vK5YkK) | |
 | 22 | [Vulnerabilidades mais comuns em aplicações web - OWASP Top Ten - Cryptographic Failures e Insecure Design](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBh8LgAAAAABqOjQiP8j81D5qydneWQHLg?e=X9KjVO) | |
-
