@@ -16,22 +16,31 @@
     </properties>
 
     <build>
-        <plugins>
-            <!-- Plugin do Cobertura -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.7</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>cobertura</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.7</version> <!-- Verifique a versão mais recente -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>cobertura</goal>
+                    </goals>
+                    <phase>test</phase>
+                </execution>
+            </executions>
+            <configuration>
+                <!-- Defina os formatos de relatório desejados -->
+                <formats>
+                    <format>xml</format>
+                    <format>html</format>
+                    <format>summaryXml</format>
+                </formats>
+                <outputDirectory>${project.build.directory}/cobertura</outputDirectory>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
     <dependencies>
         <!-- JUnit para testes -->
