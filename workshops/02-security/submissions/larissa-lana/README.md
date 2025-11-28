@@ -7,7 +7,7 @@ Para isso, utilizamos o **OWASP Juice Shop**, que é um ambiente oficial da OWAS
 
 ---
 
-## 🧃 Por que utilizei o OWASP Juice Shop?
+## 🧃 Por que utilizamos o OWASP Juice Shop?
 
 Escolhemos o Juice Shop porque ele contém vulnerabilidades reais de propósito, incluindo SQL Injection, XSS, SSRF e outras.  
 Ele permite:
