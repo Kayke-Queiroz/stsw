@@ -18,10 +18,6 @@ public class CreditPolicy {
         return isInside(age, minAge, maxAge) && isInside(income, minIncome, maxIncome);
     }
 
-    public boolean expectedByRule(int age, int income) {
-        return isInside(age, minAge, maxAge) && isInside(income, minIncome, maxIncome);
-    }
-
     private boolean isInside(int value, int min, int max) {
         return value >= min && value <= max;
     }

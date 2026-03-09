@@ -14,36 +14,36 @@ Uma solicitação de crédito é **aprovada** somente se:
 - `idade` estiver entre **18** e **65** (inclusive)
 - `renda` estiver entre **2000** e **10000** (inclusive)
 
-## Casos gerados
+## Estratégia de teste adotada
 
-Para `idade` (1 variável):
+Em vez de validar a quantidade de testes gerados, este exemplo valida diretamente
+o **resultado da regra de negócio** em valores de fronteira.
 
-- Clássico: **5 casos**
-- Robusto: **7 casos**
+Cobrimos:
 
-Para `idade + renda` (2 variáveis):
-
-- Worst-case: **5² = 25 casos**
-- Robust worst-case: **7² = 49 casos**
+- Fronteiras de `idade` com `renda` nominal
+- Fronteiras de `renda` com `idade` nominal
+- Combinações representativas para **worst-case**
+- Combinações com valores fora da faixa para **robust worst-case**
 
 ## Estrutura
 
 - `src/main/java/.../domain/CreditPolicy.java`: regra de negócio
 - `src/test/resources/features/boundary-value-analysis.feature`: cenários BDD
-- `src/test/java/.../steps/BoundaryValueSteps.java`: geração e validação dos casos
+- `src/test/java/.../steps/BoundaryValueSteps.java`: execução da regra e validação do resultado esperado
 
 ## Como executar
 
 ```bash
-cd lectures/examples/05-boundary-value-analysis-cucumber
+cd lectures/examples/04-bva
 mvn test
 ```
 
 ## Objetivo
 
-Mostrar que a técnica BVA não é só "testar min e max":
+Mostrar que a técnica BVA não é só "testar min e max", mas sim validar decisões:
 
-1. O **clássico** cobre fronteiras internas e externas imediatas.
-2. O **robusto** força valores inválidos logo fora da faixa.
-3. O **worst-case** evidencia o crescimento combinatório com múltiplas entradas.
-4. O **robust worst-case** amplia ainda mais a cobertura para combinações inválidas.
+1. O **clássico** valida fronteiras inclusivas.
+2. O **robusto** valida rejeição imediata fora da faixa.
+3. O **worst-case** exercita combinações de fronteiras em múltiplas variáveis.
+4. O **robust worst-case** reforça comportamento com combinações inválidas.
