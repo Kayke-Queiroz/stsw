@@ -1,3 +1,5 @@
+package br.edu.idp.es.stsw;
+
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
