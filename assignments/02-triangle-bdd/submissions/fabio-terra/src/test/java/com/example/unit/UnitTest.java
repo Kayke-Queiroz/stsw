@@ -17,6 +17,32 @@ public class UnitTest {
 
     @ParameterizedTest
     @CsvSource({
+            "0, 0, 0, Invalido",
+            "0, 0, 1, Invalido",
+            "0, 0, 2, Invalido",
+            "0, 0, 100, Invalido",
+            "0, 0, 199, Invalido",
+            "0, 0, 200, Invalido",
+            "0, 0, 201, Invalido",
+
+            "0, 1, 0, Invalido",
+            "0, 1, 1, Invalido",
+            "0, 1, 2, Invalido",
+            "0, 1, 100, Invalido",
+            "0, 1, 199, Invalido",
+            "0, 1, 200, Invalido",
+            "0, 1, 201, Invalido",
+
+            "0, 2, 0, Invalido",
+            "0, 2, 1, Invalido",
+            "0, 2, 2, Invalido",
+            "0, 2, 100, Invalido",
+            "0, 2, 199, Invalido",
+            "0, 2, 200, Invalido",
+            "0, 2, 201, Invalido",
+
+            "0, 100, 0, Invalido",
+            "0, 100, 1, Invalido",
             "0, 100, 2, Invalido",
             "0, 100, 100, Invalido",
             "0, 100, 199, Invalido",
