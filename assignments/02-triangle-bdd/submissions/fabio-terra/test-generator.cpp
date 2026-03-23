@@ -3,15 +3,15 @@ using namespace std;
 
 int main (void) {
     for (int i = 0; i <= 201; i++){
-        if (i == 2) i = 100;
+        if (i == 3) i = 100;
         if (i == 101) i = 199;
 
         for (int j = 0; j <= 201; j++){
-            if (j == 2) j = 100;
+            if (j == 3) j = 100;
             if (j == 101) j = 199;
 
             for (int k = 0; k <= 201; k++){
-                if (k == 2) k = 100;
+                if (k == 3) k = 100;
                 if (k == 101) k = 199;
 
                 cout << "\""<< i << ", " << j << ", " << k << ", ";
