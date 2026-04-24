@@ -1,6 +1,6 @@
 # Playwright (v1.59) — Seminário de Frameworks de Automação de Testes
 
-**Aluno:** Caleb Medeiros
+**Alunos:** Caleb Medeiros, Kelwin Menezes
 **Data da apresentação:** 24/04/2026
 **Slides:** https://gamma.com.ai/aippt/?shareId=1776366807478086530
 
