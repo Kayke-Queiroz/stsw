@@ -5,4 +5,6 @@
 1. Server Side Request Forgey (SSRF)​
 - [Basic SSRF against the local server​](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
 - [Basic SSRF against another back-end system​](https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-backend-system)
-- [Blind SSRF Vulnerabilities](https://portswigger.net/web-security/ssrf/blind)
+- [Blind SSRF with out-of-band detection](https://portswigger.net/web-security/ssrf/blind/lab-out-of-band-detection)
+- [SSRF with blacklist-based input filter](https://portswigger.net/web-security/ssrf/lab-ssrf-with-blacklist-filter)
+- [SSRF with filter bypass via open redirection vulnerability](https://portswigger.net/web-security/ssrf/lab-ssrf-filter-bypass-via-open-redirection)
