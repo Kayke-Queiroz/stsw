@@ -1,0 +1,56 @@
+#####################################################
+# OWASP Dependency-Track - Demo para Seminário
+# 
+# Serviços:
+#   - API Server (backend)
+#   - Frontend (interface web)
+#   - Init (upload automático do SBOM)
+#####################################################
+
+volumes:
+  dependency-track:
+
+services:
+  dtrack-apiserver:
+    image: dependencytrack/apiserver:latest
+    deploy:
+      resources:
+        limits:
+          memory: 8192m
+        reservations:
+          memory: 4096m
+    ports:
+      - '8081:8080'
+    volumes:
+      - 'dependency-track:/data'
+    restart: unless-stopped
+    environment:
+      - LOGGING_LEVEL=INFO
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/version"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+
+  dtrack-frontend:
+    image: dependencytrack/frontend:latest
+    depends_on:
+      dtrack-apiserver:
+        condition: service_healthy
+    environment:
+      - API_BASE_URL=http://localhost:8081
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  dtrack-init:
+    image: curlimages/curl:latest
+    depends_on:
+      dtrack-apiserver:
+        condition: service_healthy
+    volumes:
+      - './bom.json:/sbom/bom.json:ro'
+      - './init-sbom.sh:/init-sbom.sh:ro'
+    entrypoint: ["/bin/sh", "/init-sbom.sh"]
+    restart: "no"

@@ -1,0 +1,128 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-06-15T00:00:00Z",
+    "component": {
+      "type": "application",
+      "name": "demo-vulnerable-app",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "log4j-core",
+      "version": "2.14.1",
+      "group": "org.apache.logging.log4j",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "description": "Apache Log4j Core - VULNERABLE to Log4Shell (CVE-2021-44228)"
+    },
+    {
+      "type": "library",
+      "name": "spring-webmvc",
+      "version": "5.3.17",
+      "group": "org.springframework",
+      "purl": "pkg:maven/org.springframework/spring-webmvc@5.3.17",
+      "description": "Spring Web MVC - VULNERABLE to Spring4Shell (CVE-2022-22965)"
+    },
+    {
+      "type": "library",
+      "name": "jackson-databind",
+      "version": "2.9.8",
+      "group": "com.fasterxml.jackson.core",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.8",
+      "description": "Jackson Databind - Multiple deserialization CVEs"
+    },
+    {
+      "type": "library",
+      "name": "commons-collections",
+      "version": "3.2.1",
+      "group": "commons-collections",
+      "purl": "pkg:maven/commons-collections/commons-collections@3.2.1",
+      "description": "Apache Commons Collections - Deserialization RCE"
+    },
+    {
+      "type": "library",
+      "name": "struts2-core",
+      "version": "2.5.10",
+      "group": "org.apache.struts",
+      "purl": "pkg:maven/org.apache.struts/struts2-core@2.5.10",
+      "description": "Apache Struts 2 - Remote Code Execution"
+    },
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.19",
+      "purl": "pkg:npm/lodash@4.17.19",
+      "description": "Lodash - Prototype Pollution (CVE-2021-23337)"
+    },
+    {
+      "type": "library",
+      "name": "express",
+      "version": "4.17.1",
+      "purl": "pkg:npm/express@4.17.1",
+      "description": "Express.js web framework"
+    },
+    {
+      "type": "library",
+      "name": "minimist",
+      "version": "1.2.5",
+      "purl": "pkg:npm/minimist@1.2.5",
+      "description": "Minimist - Prototype Pollution (CVE-2021-44906)"
+    },
+    {
+      "type": "library",
+      "name": "axios",
+      "version": "0.21.1",
+      "purl": "pkg:npm/axios@0.21.1",
+      "description": "Axios HTTP client - SSRF (CVE-2021-3749)"
+    },
+    {
+      "type": "library",
+      "name": "django",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/django@3.1.6",
+      "description": "Django web framework - SQL Injection, XSS"
+    },
+    {
+      "type": "library",
+      "name": "pillow",
+      "version": "8.1.0",
+      "purl": "pkg:pypi/pillow@8.1.0",
+      "description": "Pillow image library - Buffer overflow, DoS"
+    },
+    {
+      "type": "library",
+      "name": "urllib3",
+      "version": "1.26.4",
+      "purl": "pkg:pypi/urllib3@1.26.4",
+      "description": "urllib3 - Cookie leak, CRLF injection"
+    },
+    {
+      "type": "library",
+      "name": "spring-boot",
+      "version": "2.6.6",
+      "group": "org.springframework.boot",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@2.6.6",
+      "description": "Spring Boot framework"
+    },
+    {
+      "type": "library",
+      "name": "netty-handler",
+      "version": "4.1.72.Final",
+      "group": "io.netty",
+      "purl": "pkg:maven/io.netty/netty-handler@4.1.72.Final",
+      "description": "Netty handler - Information disclosure"
+    },
+    {
+      "type": "library",
+      "name": "moment",
+      "version": "2.29.1",
+      "purl": "pkg:npm/moment@2.29.1",
+      "description": "Moment.js - ReDoS path traversal (CVE-2022-24785)"
+    }
+  ]
+}
