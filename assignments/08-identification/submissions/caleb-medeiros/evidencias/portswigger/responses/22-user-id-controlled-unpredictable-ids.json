@@ -1,0 +1,30 @@
+{
+  "labIndex": 22,
+  "category": "Broken Access Control",
+  "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-id-controlled-by-request-parameter-with-unpredictable-user-ids",
+  "technique": "GUID publico de carlos em post, IDOR em /my-account?id=<guid> e submissao da API key",
+  "payload": "Carlos GUID 49f4032c-d25f-48d1-8ad2-51ebfda25280; /my-account?id=<guid>",
+  "launch": {
+    "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-id-controlled-by-request-parameter-with-unpredictable-user-ids",
+    "url": "https://0a7100d50371ebe08093a95300f500c8.web-security-academy.net/",
+    "base": "https://0a7100d50371ebe08093a95300f500c8.web-security-academy.net",
+    "title": "User ID controlled by request parameter, with unpredictable user IDs",
+    "attempt": 1
+  },
+  "http": {
+    "carlosPost": "/post?postId=3",
+    "loginStatus": 302,
+    "accountStatus": 200,
+    "keyFound": true,
+    "submitStatus": 200
+  },
+  "instanceBase": "https://0a7100d50371ebe08093a95300f500c8.web-security-academy.net",
+  "bannerText": "User ID controlled by request parameter, with unpredictable user IDs\nBack to lab description  \nLAB\n\nSolved",
+  "solved": true,
+  "statusClass": "widgetcontainer-lab-status is-solved",
+  "statusText": "LAB\n\nSolved",
+  "text": "User ID controlled by request parameter, with unpredictable user IDs\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\nSwipe Left Please\n\nI don't know if you've ever been on a dating site, but if you're female I'd suggest you don't waste your time. And trust me, if you think by paying for a subscription you'll get a better selection of potential...\n\nView post\nThe history of swigging port\n\nThe 'discovery' of port dates back to the late Seventeenth Century when British sailors stumbled upon the drink in Portugal and then stumbled even more slowly home with several more bottles. It has been said since then that Portugal is...\n\nView post\nThe Digital Fairytale\n\nOnce upon a time'\n\nView post\nFaking It! - InstaCam\n\nPeople are going to extreme lengths to pull the wool over their friends' eyes on Social Media. If you've ever clicked your way through family photos and the perfect summer and winter getaway pics of your friends on Instagram then...\n\nView post\nPasswords\n\nThere are three types of password users in the world; those who remember them, those who don't, and those who write them down.\n\nView post\nBlack Market Dealings\n\nA strange phenomenon has been occurring on a High school campus in Ohio. It seems one young boy was given several boxes of reusable coffee cups to use for promotional purposes. The boy was fairly lazy in the task and...\n\nView post\nThe Hearing Test\n\nA couple of months ago my flatmate went to have his hearing tested. We all thought he was just ignoring us, but as it turned out he was struggling to keep up with the conversations and decided better to be...\n\nView post\nThe Peopleless Circus\n\nWhen the leaflet dropped through my letterbox I thought it was a joke. The Peopleless Ci",
+  "title": "User ID controlled by request parameter, with unpredictable user IDs",
+  "url": "https://0a7100d50371ebe08093a95300f500c8.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/22-user-id-controlled-unpredictable-ids-solved.png"
+}
