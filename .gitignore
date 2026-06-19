@@ -26,3 +26,9 @@ replay_pid*
 target/
 lib/
 **/fabricio-santana/
+
+# Playwright MCP scratch output (snapshots, console logs, temp uploads)
+.playwright-mcp/
+
+# macOS
+.DS_Store
