@@ -1,0 +1,6 @@
+Link para saber mais sobre o ataque hacker que aconteceu em 2019, alvo -> Capital One
+
+
+Link 1 : https://www.100security.com.br/ssrf-aws
+Link 2 : https://firstsecurity.com.br/blog/ssrf-cloud-aws-exploracao-impacto
+Link 3 : https://pt.aikido.dev/blog/top-web-application-security-vulnerabilities
