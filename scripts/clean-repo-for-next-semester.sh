@@ -3,17 +3,21 @@
 # Diretório base
 BASE_DIR=$(pwd)
 
-# 1️⃣ Limpar submissions, mantendo apenas o .gitkeep
-echo "🧹 Limpando submissions/ exceto .gitkeep..."
-find "${BASE_DIR}/assignments" -type d -name submissions | while read submission_dir; do
+echo "Limpando submissions/ exceto .gitkeep..."
+find "${BASE_DIR}" \
+  -path "${BASE_DIR}/.git" -prune -o \
+  -path "${BASE_DIR}/readings" -prune -o \
+  -type d -name submissions -print -prune |
+while IFS= read -r submission_dir; do
   find "$submission_dir" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
+  touch "$submission_dir/.gitkeep"
 done
 
-# 2️⃣ Limpar arquivos do diretório readings/
-echo "🧹 Limpando arquivos em readings/..."
-find "${BASE_DIR}/readings" -type f -name "*.pdf" -exec rm -f {} \;
+echo "Limpando arquivos de alunos em readings/ exceto .gitkeep..."
+find "${BASE_DIR}/readings" -mindepth 1 -maxdepth 1 -type d -print |
+while IFS= read -r reading_dir; do
+  find "$reading_dir" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
+  touch "$reading_dir/.gitkeep"
+done
 
-echo "🧹 Limpando 'challenges/' (mantendo .gitkeep)..."
-find "${BASE_DIR}/challenges" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
-
-echo "✅ Diretórios limpos com sucesso!"
+echo "Diretórios limpos com sucesso!"
