@@ -10,7 +10,7 @@ Aqui você encontrará referência para os slides utilizados ao longo do curso.
 |#| Conteúdo | Atividade em sala |
 |---|---|---|
 | 1 | [Apresentação da disciplina e contextualização](https://1drv.ms/p/c/187d9a0eb7d8e7f9/Efnn2LcOmn0ggBi8LAAAAAABlv9LMiX7LIShD2BVfNIJ6Q?e=2Rm4eX) | |
-| 2 | [Configuração de ambiente, visão geral sobre o github e procedimento para submissão de tarefas]() | [Configuração do ambiente java](../howto/) e execução do [Hello, World!](./examples/00-hello) |
+| 2 | [Configuração de ambiente, visão geral sobre o github e procedimento para submissão de tarefas](https://fabriciosantana.github.io/poo/01a-hello/) | [Configuração do ambiente java](../howto/) e execução do [Hello, World!](./examples/00-hello) |
 | 3 | [Validação e verificação de software](https://1drv.ms/p/s!Avnn2LcOmn0Y2FGAdCR1ZxaHsHAX?e=1usMLZ) | Apresentação do problema do triângulo. <br> [Software Testing: A Craftsman’s Approach](https://1drv.ms/b/c/187d9a0eb7d8e7f9/Efvfdxo2EShGof8ohpay_HoBSAbB3zdz_sM8AyYIuPwJRA?e=5P3XXK) <br> [The art of software testing](https://1drv.ms/b/c/187d9a0eb7d8e7f9/EZbFK4OnzhxLqF_oHLtUvGABxjSJ5su6v7blkgtWGXRgPw?e=FdNWUs) <br> [Developing Effective Test Cases](https://1drv.ms/b/c/187d9a0eb7d8e7f9/ER09SBTM-bRFrwonh1-b7bwBSba4edDYHbBHA1x68We3ng?e=uf0Pra) | 
 | 4 | [Noções de BDD, Cucumber e Gherkin](https://1drv.ms/p/s!Avnn2LcOmn0Y2Uz-aKOJm3Tm4GvI?e=4jaEiR) | [Demonstração de execução de testes com Cucumber, Junit e Maven](./examples/02-hello-cucumber-maven) |
 | 5 | [Métodos para definição de casos de testes (BVA)](https://1drv.ms/p/s!Avnn2LcOmn0Y33DQ6AwjzsYmjvoS?e=n2lQ28) | [Demostração de casos de testes para o problema do triângulo usando BVA](https://1drv.ms/x/s!Avnn2LcOmn0Y2VmIUSy8koU1F9HN?e=iYoLHr) |
