@@ -1,14 +1,14 @@
 Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
   Como pessoa estudante de teste de software
   Quero validar decisões de negócio nos pontos de fronteira
-  Para entender BVA clássico, robusto, worst-case e robust worst-case
+  Para entender BVA normal, robusto, worst-case e robust worst-case
 
   Background:
     Given que a idade aceita vai de 18 até 65
     And que a renda aceita vai de 2000 até 10000
     And que a renda nominal é 5000
 
-  Scenario Outline: BVA clássico e robusto para idade (renda nominal fixa)
+  Scenario Outline: BVA normal e robusto para idade (renda nominal fixa)
     When eu avalio uma proposta com idade <idade> e renda 5000
     Then o resultado da proposta deve ser "<resultado>"
 
@@ -22,7 +22,7 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
       | 65    | APROVADA  |
       | 66    | REPROVADA |
 
-  Scenario Outline: BVA clássico e robusto para renda (idade nominal fixa)
+  Scenario Outline: BVA normal e robusto para renda (idade nominal fixa)
     When eu avalio uma proposta com idade 40 e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
