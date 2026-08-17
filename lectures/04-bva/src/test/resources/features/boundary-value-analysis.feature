@@ -8,50 +8,75 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
     And que a renda aceita vai de 2000 até 10000
     And que a renda nominal é 5000
 
-  Scenario Outline: BVA normal e robusto para idade (renda nominal fixa)
-    When eu avalio uma proposta com idade <idade> e renda 5000
+  Scenario Outline: BVA normal com suposição de falha única
+    When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
     Examples:
-      | idade | resultado |
-      | 17    | REPROVADA |
-      | 18    | APROVADA  |
-      | 19    | APROVADA  |
-      | 40    | APROVADA  |
-      | 64    | APROVADA  |
-      | 65    | APROVADA  |
-      | 66    | REPROVADA |
+      | idade | renda | resultado |
+      | 40    | 5000  | APROVADA  |
+      | 18    | 5000  | APROVADA  |
+      | 19    | 5000  | APROVADA  |
+      | 64    | 5000  | APROVADA  |
+      | 65    | 5000  | APROVADA  |
+      | 40    | 2000  | APROVADA  |
+      | 40    | 2001  | APROVADA  |
+      | 40    | 9999  | APROVADA  |
+      | 40    | 10000 | APROVADA  |
 
-  Scenario Outline: BVA normal e robusto para renda (idade nominal fixa)
-    When eu avalio uma proposta com idade 40 e renda <renda>
+  Scenario Outline: BVA robusto com suposição de falha única
+    When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
     Examples:
-      | renda | resultado |
-      | 1999  | REPROVADA |
-      | 2000  | APROVADA  |
-      | 2001  | APROVADA  |
-      | 5000  | APROVADA  |
-      | 9999  | APROVADA  |
-      | 10000 | APROVADA  |
-      | 10001 | REPROVADA |
+      | idade | renda | resultado |
+      | 40    | 5000  | APROVADA  |
+      | 17    | 5000  | REPROVADA |
+      | 18    | 5000  | APROVADA  |
+      | 19    | 5000  | APROVADA  |
+      | 64    | 5000  | APROVADA  |
+      | 65    | 5000  | APROVADA  |
+      | 66    | 5000  | REPROVADA |
+      | 40    | 1999  | REPROVADA |
+      | 40    | 2000  | APROVADA  |
+      | 40    | 2001  | APROVADA  |
+      | 40    | 9999  | APROVADA  |
+      | 40    | 10000 | APROVADA  |
+      | 40    | 10001 | REPROVADA |
 
-  Scenario Outline: BVA combinatório (worst-case) em duas variáveis
+  Scenario Outline: BVA worst-case com suposição de falha múltipla
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
     Examples:
       | idade | renda | resultado |
       | 18    | 2000  | APROVADA  |
+      | 18    | 2001  | APROVADA  |
+      | 18    | 5000  | APROVADA  |
+      | 18    | 9999  | APROVADA  |
       | 18    | 10000 | APROVADA  |
+      | 19    | 2000  | APROVADA  |
+      | 19    | 2001  | APROVADA  |
+      | 19    | 5000  | APROVADA  |
+      | 19    | 9999  | APROVADA  |
+      | 19    | 10000 | APROVADA  |
+      | 40    | 2000  | APROVADA  |
+      | 40    | 2001  | APROVADA  |
+      | 40    | 5000  | APROVADA  |
+      | 40    | 9999  | APROVADA  |
+      | 40    | 10000 | APROVADA  |
+      | 64    | 2000  | APROVADA  |
+      | 64    | 2001  | APROVADA  |
+      | 64    | 5000  | APROVADA  |
+      | 64    | 9999  | APROVADA  |
+      | 64    | 10000 | APROVADA  |
       | 65    | 2000  | APROVADA  |
+      | 65    | 2001  | APROVADA  |
+      | 65    | 5000  | APROVADA  |
+      | 65    | 9999  | APROVADA  |
       | 65    | 10000 | APROVADA  |
-      | 17    | 5000  | REPROVADA |
-      | 66    | 5000  | REPROVADA |
-      | 40    | 1999  | REPROVADA |
-      | 40    | 10001 | REPROVADA |
 
-  Scenario Outline: BVA combinatório robust worst-case com fora da faixa em ambas entradas
+  Scenario Outline: BVA robust worst-case com suposição de falha múltipla
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
@@ -59,7 +84,50 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
       | idade | renda | resultado |
       | 17    | 1999  | REPROVADA |
       | 17    | 2000  | REPROVADA |
+      | 17    | 2001  | REPROVADA |
+      | 17    | 5000  | REPROVADA |
+      | 17    | 9999  | REPROVADA |
+      | 17    | 10000 | REPROVADA |
+      | 17    | 10001 | REPROVADA |
       | 18    | 1999  | REPROVADA |
-      | 66    | 10001 | REPROVADA |
+      | 18    | 2000  | APROVADA  |
+      | 18    | 2001  | APROVADA  |
+      | 18    | 5000  | APROVADA  |
+      | 18    | 9999  | APROVADA  |
+      | 18    | 10000 | APROVADA  |
+      | 18    | 10001 | REPROVADA |
+      | 19    | 1999  | REPROVADA |
+      | 19    | 2000  | APROVADA  |
+      | 19    | 2001  | APROVADA  |
+      | 19    | 5000  | APROVADA  |
+      | 19    | 9999  | APROVADA  |
+      | 19    | 10000 | APROVADA  |
+      | 19    | 10001 | REPROVADA |
+      | 40    | 1999  | REPROVADA |
+      | 40    | 2000  | APROVADA  |
+      | 40    | 2001  | APROVADA  |
+      | 40    | 5000  | APROVADA  |
+      | 40    | 9999  | APROVADA  |
+      | 40    | 10000 | APROVADA  |
+      | 40    | 10001 | REPROVADA |
+      | 64    | 1999  | REPROVADA |
+      | 64    | 2000  | APROVADA  |
+      | 64    | 2001  | APROVADA  |
+      | 64    | 5000  | APROVADA  |
+      | 64    | 9999  | APROVADA  |
+      | 64    | 10000 | APROVADA  |
+      | 64    | 10001 | REPROVADA |
+      | 65    | 1999  | REPROVADA |
+      | 65    | 2000  | APROVADA  |
+      | 65    | 2001  | APROVADA  |
+      | 65    | 5000  | APROVADA  |
+      | 65    | 9999  | APROVADA  |
+      | 65    | 10000 | APROVADA  |
       | 65    | 10001 | REPROVADA |
+      | 66    | 1999  | REPROVADA |
+      | 66    | 2000  | REPROVADA |
+      | 66    | 2001  | REPROVADA |
+      | 66    | 5000  | REPROVADA |
+      | 66    | 9999  | REPROVADA |
       | 66    | 10000 | REPROVADA |
+      | 66    | 10001 | REPROVADA |
