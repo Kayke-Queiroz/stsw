@@ -28,25 +28,31 @@
     </dependencyManagement>
 
     <dependencies>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
      <build>
+
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -71,19 +77,19 @@
             </plugin>
 
             <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>3.5.0</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>java</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <mainClass>br.edu.idp.stsw.unittest.Calculator</mainClass>
-            </configuration>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>br.edu.idp.stsw.unittest.Calculator</mainClass>
+                </configuration>
         </plugin>
 
         <plugin>
@@ -93,9 +99,7 @@
             <configuration>
                 <includes>
                     <include>**/*Test.java</include>
-                    
                 </includes>
-                
             </configuration>
         </plugin>
 
@@ -104,15 +108,21 @@
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.12</version>
             <executions>
-            <execution>
-                <goals>
-                <goal>prepare-agent</goal>
-                </goals>
-            </execution>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
             </executions>
         </plugin>
-
+        
         </plugins>
     </build>
-
 </project>

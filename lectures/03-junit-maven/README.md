@@ -31,7 +31,7 @@ Este exemplo mostra uma calculadora didatica (`Calculator`) e testes unitarios c
 Entre no diretorio do exemplo:
 
 ```bash
-cd lectures/examples/03-junit-maven
+cd lectures/03-junit-maven
 ```
 
 Execute a aplicacao com Maven:
@@ -50,17 +50,40 @@ java -jar target/hello-junit-maven-1.0-SNAPSHOT.jar
 ## Como rodar os testes unitarios
 
 ```bash
-cd lectures/examples/03-junit-maven
+cd lectures/03-junit-maven
 mvn test
 ```
 
 O Maven executa os testes da classe `CalculatorTest` usando o `maven-surefire-plugin`.
 
-## Relatorio de cobertura
+## Como visualizar a cobertura com JaCoCo
 
-O projeto usa o plugin JaCoCo para preparar a coleta de cobertura durante os testes.
-Depois de executar `mvn test`, o arquivo de execucao da cobertura fica em:
+O projeto usa o plugin JaCoCo para coletar a cobertura durante os testes.
+
+Para gerar o relatorio HTML:
+
+```bash
+cd lectures/03-junit-maven
+mvn verify
+```
+
+Abra o arquivo abaixo no navegador:
 
 ```text
-target/jacoco.exec
+target/site/jacoco/index.html
 ```
+
+Se estiver em um ambiente remoto, como Codespaces ou container, suba um servidor HTTP simples com o `jwebserver`, disponivel no JDK:
+
+```bash
+cd target/site/jacoco
+jwebserver -p 8000
+```
+
+Depois acesse no navegador:
+
+```text
+http://localhost:8000
+```
+
+O arquivo `target/jacoco.exec` tambem e gerado, mas ele e um arquivo binario de execucao do JaCoCo. Para visualizar a cobertura, use o relatorio HTML em `target/site/jacoco/index.html`.

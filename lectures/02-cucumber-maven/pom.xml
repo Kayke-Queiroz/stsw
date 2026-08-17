@@ -70,7 +70,6 @@
             <scope>test</scope>
         </dependency>
 
-
     </dependencies>
 
     <build>
@@ -122,13 +121,10 @@
             <configuration>
                 <includes>
                     <include>**/*Test.java</include>
-                    
                 </includes>
-                
             </configuration>
         </plugin>
 
         </plugins>
     </build>
-
 </project>
