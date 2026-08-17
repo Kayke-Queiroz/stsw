@@ -11,6 +11,7 @@
 
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit5.version>5.13.4</junit5.version>
     </properties>
 
@@ -63,7 +64,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>br.edu.idp.es.stsw.Calculator</mainClass>
+                            <mainClass>br.edu.idp.stsw.unittest.Calculator</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -81,8 +82,7 @@
                 </execution>
             </executions>
             <configuration>
-                <mainClass>br.edu.idp.es.stsw.test.CalculatorTest</mainClass>
-                <classpathScope>test</classpathScope>
+                <mainClass>br.edu.idp.stsw.unittest.Calculator</mainClass>
             </configuration>
         </plugin>
 
