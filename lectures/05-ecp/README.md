@@ -104,6 +104,36 @@ Depois acesse no navegador:
 http://localhost:8000/Cucumber.html
 ```
 
+### Relatório de cobertura com JaCoCo
+
+O projeto usa JaCoCo para gerar um relatório HTML de cobertura de testes.
+
+Para executar os testes e gerar o relatório:
+
+```bash
+cd lectures/05-ecp
+mvn verify
+```
+
+O relatório é gerado em:
+
+```text
+target/site/jacoco/index.html
+```
+
+Sirva o diretório do relatório com o `jwebserver`:
+
+```bash
+cd target/site/jacoco
+jwebserver -p 8001
+```
+
+Depois acesse no navegador:
+
+```text
+http://localhost:8001
+```
+
 ### Aplicação console
 
 Execute informando os valores como argumentos:
