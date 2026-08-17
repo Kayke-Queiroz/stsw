@@ -1,4 +1,4 @@
-Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
+Feature: Validar política de concessão de crédito usando técnica BVA
   Como pessoa estudante de teste de software
   Quero validar decisões de negócio nos pontos de fronteira
   Para entender BVA normal, robusto, worst-case e robust worst-case
@@ -8,7 +8,7 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
     And que a renda aceita vai de 2000 até 10000
     And que a renda nominal é 5000
 
-  Scenario Outline: BVA normal com suposição de falha única
+  Scenario Outline: Validar política de concessão de crédito usando técnica BVA normal
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
@@ -24,7 +24,7 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
       | 40    | 9999  | APROVADA  |
       | 40    | 10000 | APROVADA  |
 
-  Scenario Outline: BVA robusto com suposição de falha única
+  Scenario Outline: Validar política de concessão de crédito usando técnica BVA robusto
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
@@ -44,7 +44,7 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
       | 40    | 10000 | APROVADA  |
       | 40    | 10001 | REPROVADA |
 
-  Scenario Outline: BVA worst-case com suposição de falha múltipla
+  Scenario Outline: Validar política de concessão de crédito usando técnica BVA worst-case
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
@@ -76,7 +76,7 @@ Feature: Boundary Value Analysis (BVA) aplicado a regra de negócio
       | 65    | 9999  | APROVADA  |
       | 65    | 10000 | APROVADA  |
 
-  Scenario Outline: BVA robust worst-case com suposição de falha múltipla
+  Scenario Outline: Validar política de concessão de crédito usando técnica BVA robust worst-case
     When eu avalio uma proposta com idade <idade> e renda <renda>
     Then o resultado da proposta deve ser "<resultado>"
 
