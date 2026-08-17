@@ -43,6 +43,34 @@ cd lectures/04-bva
 mvn test
 ```
 
+### Relatório HTML local do Cucumber
+
+O runner do Cucumber gera um relatório HTML local em:
+
+```text
+target/cucumber-reports/Cucumber.html
+```
+
+Para gerar o relatório:
+
+```bash
+cd lectures/04-bva
+mvn test
+```
+
+Sirva o diretório do relatório com o `jwebserver`:
+
+```bash
+cd target/cucumber-reports
+jwebserver -p 8000
+```
+
+Depois acesse no navegador:
+
+```text
+http://localhost:8000/Cucumber.html
+```
+
 ### Aplicação console
 
 Execute informando os valores como argumentos:
