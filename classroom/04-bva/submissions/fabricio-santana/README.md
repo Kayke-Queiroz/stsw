@@ -111,7 +111,7 @@ Para compilar e executar a aplicação console `DroneMissonApp`, use:
 
 ```bash
 mvn compile exec:java \
-  -Dexec.mainClass=br.edu.idp.es.stsw.bva.DroneMissonApp \
+  -Dexec.mainClass=br.edu.idp.es.stsw.bva.DroneMissionApp \
   -Dexec.classpathScope=compile
 ```
 

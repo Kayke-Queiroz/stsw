@@ -1,9 +1,10 @@
 package br.edu.idp.es.stsw.bva;
 
-import br.edu.idp.es.stsw.bva.domain.DroneMissionPolicy;
 import java.util.Scanner;
 
-public class DroneMissonApp {
+import br.edu.idp.es.stsw.bva.domain.DroneMissionPolicy;
+
+public class DroneMissionApp {
     
     public static void main(String[] args){
 
