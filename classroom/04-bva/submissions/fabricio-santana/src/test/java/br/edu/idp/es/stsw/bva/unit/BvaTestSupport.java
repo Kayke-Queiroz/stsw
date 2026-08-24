@@ -1,19 +1,19 @@
-package br.edu.idp.stsw.classroom.bva;
-
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MAX_BATTERY;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MAX_PAYLOAD_WEIGHT;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MAX_WIND;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MIN_BATTERY;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MIN_PAYLOAD_WEIGHT;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.MIN_WIND;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.NOMINAL_BATTERY;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.NOMINAL_PAYLOAD_WEIGHT;
-import static br.edu.idp.stsw.classroom.bva.DroneMissionPolicy.NOMINAL_WIND;
-import static org.junit.jupiter.params.provider.Arguments.arguments;
+package br.edu.idp.es.stsw.bva.unit;
 
 import java.util.stream.Stream;
 
 import org.junit.jupiter.params.provider.Arguments;
+
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MAX_BATTERY;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MAX_PAYLOAD_WEIGHT;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MAX_WIND;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MIN_BATTERY;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MIN_PAYLOAD_WEIGHT;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.MIN_WIND;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.NOMINAL_BATTERY;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.NOMINAL_PAYLOAD_WEIGHT;
+import static br.edu.idp.es.stsw.bva.DroneMissionPolicy.NOMINAL_WIND;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 final class BvaTestSupport {
 

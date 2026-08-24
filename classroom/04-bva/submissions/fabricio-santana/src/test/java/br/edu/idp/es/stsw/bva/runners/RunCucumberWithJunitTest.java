@@ -1,4 +1,4 @@
-package br.edu.idp.stsw.classroom.bva.runner;
+package br.edu.idp.es.stsw.bva.runners;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
@@ -12,8 +12,11 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PUBLISH_ENABLED
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "br.edu.idp.stsw.classroom.bva.steps")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "br.edu.idp.es.stsw.bva.steps")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/site/cucumber-reports/Cucumber.html")
 @ConfigurationParameter(key = PLUGIN_PUBLISH_ENABLED_PROPERTY_NAME, value = "false")
-public class RunCucumberTest {
+public class RunCucumberWithJunitTest {
+    public static void main(String[] args){
+        System.out.println("### INICIANDO TESTES DO CUCUMBER COM JUNIT ###");
+    }
 }

@@ -1,17 +1,18 @@
-package br.edu.idp.stsw.classroom.bva;
-
-import static br.edu.idp.stsw.classroom.bva.BvaTestSupport.cartesianProduct;
-import static br.edu.idp.stsw.classroom.bva.BvaTestSupport.normalBatteryValues;
-import static br.edu.idp.stsw.classroom.bva.BvaTestSupport.normalPayloadWeightValues;
-import static br.edu.idp.stsw.classroom.bva.BvaTestSupport.normalWindValues;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package br.edu.idp.es.stsw.bva.unit;
 
 import java.util.stream.Stream;
 
+import static br.edu.idp.es.stsw.bva.unit.BvaTestSupport.cartesianProduct;
+import static br.edu.idp.es.stsw.bva.unit.BvaTestSupport.normalBatteryValues;
+import static br.edu.idp.es.stsw.bva.unit.BvaTestSupport.normalPayloadWeightValues;
+import static br.edu.idp.es.stsw.bva.unit.BvaTestSupport.normalWindValues;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import br.edu.idp.es.stsw.bva.DroneMissionPolicy;
 
 class WorstCaseBvaTest {
 

@@ -1,8 +1,8 @@
-package br.edu.idp.stsw.classroom.bva.steps;
+package br.edu.idp.es.stsw.bva.steps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.edu.idp.stsw.classroom.bva.DroneMissionPolicy;
+import br.edu.idp.es.stsw.bva.DroneMissionPolicy;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

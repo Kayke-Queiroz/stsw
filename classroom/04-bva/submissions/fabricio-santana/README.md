@@ -54,6 +54,38 @@ mvn test
 
 Esse comando executa os testes JUnit e a feature Cucumber.
 
+## Como executar o Cucumber sem JUnit
+
+O runner `RunCucumberWithJunitTest` é executado pelo Maven Surefire quando você roda:
+
+```bash
+mvn test
+```
+
+Para executar o Cucumber diretamente pela CLI, sem passar pelo JUnit Platform, use:
+
+```bash
+cd classroom/04-bva/submissions/fabricio-santana
+mvn test-compile exec:java
+```
+
+Esse comando usa a classe:
+
+```text
+br.edu.idp.stsw.classroom.bva.runners.RunCucumberWithCli
+```
+
+A diferença é:
+
+- `mvn test`: executa JUnit e Cucumber via JUnit Platform.
+- `mvn test-compile exec:java`: compila as classes de teste e executa `io.cucumber.core.cli.Main` diretamente.
+
+O relatório HTML desse runner CLI fica em:
+
+```text
+target/site/cucumber-reports/CucumberCli.html
+```
+
 ## Como visualizar o relatório local do Cucumber
 
 O relatório HTML do Cucumber fica em:

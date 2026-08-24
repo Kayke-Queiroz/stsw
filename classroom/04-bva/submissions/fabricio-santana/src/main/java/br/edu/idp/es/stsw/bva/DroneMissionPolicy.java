@@ -1,4 +1,4 @@
-package br.edu.idp.stsw.classroom.bva;
+package br.edu.idp.es.stsw.bva;
 
 public class DroneMissionPolicy {
 
