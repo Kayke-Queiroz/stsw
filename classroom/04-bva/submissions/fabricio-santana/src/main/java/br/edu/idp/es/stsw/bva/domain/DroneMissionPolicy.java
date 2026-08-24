@@ -1,4 +1,4 @@
-package br.edu.idp.es.stsw.bva;
+package br.edu.idp.es.stsw.bva.domain;
 
 public class DroneMissionPolicy {
 
@@ -13,12 +13,6 @@ public class DroneMissionPolicy {
     public static final int MIN_PAYLOAD_WEIGHT = 1;
     public static final int NOMINAL_PAYLOAD_WEIGHT = 4;
     public static final int MAX_PAYLOAD_WEIGHT = 8;
-
-    public static void main(String[] args){
-
-        DroneMissionPolicy droneMission = new DroneMissionPolicy();
-        System.out.println(droneMission.evaluate(70, 20, 4));
-    }
     
     public String evaluate(int battery, int wind, int payloadWeight) {
         boolean batteryIsSafe = isInside(battery, MIN_BATTERY, MAX_BATTERY);

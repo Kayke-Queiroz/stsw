@@ -14,12 +14,13 @@ Caso qualquer entrada esteja fora desses intervalos, a missão é negada.
 
 ## Estrutura
 
-- `src/main/java/.../DroneMissionPolicy.java`: regra de negócio
+- `src/main/java/.../domain/DroneMissionPolicy.java`: regra de negócio
+- `src/main/java/.../DroneMissonApp.java`: aplicação console
 - `src/test/java/.../NormalBvaTest.java`: BVA normal, `13` casos
 - `src/test/java/.../RobustBvaTest.java`: BVA robusto, `19` casos
 - `src/test/java/.../WorstCaseBvaTest.java`: worst-case, `125` casos
 - `src/test/java/.../RobustWorstCaseBvaTest.java`: robust worst-case, `343` casos
-- `src/test/java/.../BvaTestSupport.java`: geração programática das combinações
+- `src/test/java/.../DroneMissionTestSpecification.java`: limites e decisões compartilhados pelos testes
 - `src/test/resources/features/DroneMission-BVA.feature`: documentação executável em Gherkin
 - `src/test/java/.../runners/RunCucumberWithJunitTest.java`: runner Cucumber integrado ao JUnit Platform
 - `src/test/java/.../runners/RunCucumberWithCli.java`: runner direto da CLI do Cucumber
@@ -40,10 +41,15 @@ Além dos testes unitários completos, há uma suíte BDD com Cucumber:
 
 - BVA normal completo: `13` exemplos
 - BVA robusto completo: `19` exemplos
-- worst-case: casos representativos
-- robust worst-case: casos representativos
+- worst-case completo: `125` exemplos
+- robust worst-case completo: `343` exemplos
 
-Os conjuntos combinatórios completos permanecem nos testes JUnit parametrizados, porque `125` e `343` linhas em Gherkin deixariam a feature pouco legível.
+Assim, tanto os testes JUnit parametrizados quanto a feature Cucumber apresentam
+explicitamente os `500` casos derivados pelas quatro variações de BVA. Os testes
+usam tabelas estáticas com `@CsvSource`, sem geração programática. Os limites e
+as decisões são definidos uma vez em `DroneMissionTestSpecification`, sem
+depender das constantes da implementação, e cada combinação permanece visível
+para inspeção em aula.
 
 ## Como executar todos os testes
 
@@ -101,16 +107,16 @@ target/site/cucumber-reports/CucumberCli.html
 
 ## Como executar a classe principal
 
-Para compilar e executar o método `main` de `DroneMissionPolicy`, use:
+Para compilar e executar a aplicação console `DroneMissonApp`, use:
 
 ```bash
 mvn compile exec:java \
-  -Dexec.mainClass=br.edu.idp.es.stsw.bva.DroneMissionPolicy \
+  -Dexec.mainClass=br.edu.idp.es.stsw.bva.DroneMissonApp \
   -Dexec.classpathScope=compile
 ```
 
-A aplicação avalia a missão de exemplo configurada no método `main` e imprime
-`AUTORIZADA` ou `NEGADA` no terminal.
+A aplicação solicita bateria, vento e peso da carga e imprime `AUTORIZADA` ou
+`NEGADA` no terminal.
 
 ## Como visualizar o relatório local do Cucumber
 

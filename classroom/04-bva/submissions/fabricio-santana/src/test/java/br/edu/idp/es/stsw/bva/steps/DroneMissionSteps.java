@@ -2,7 +2,7 @@ package br.edu.idp.es.stsw.bva.steps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.edu.idp.es.stsw.bva.DroneMissionPolicy;
+import br.edu.idp.es.stsw.bva.domain.DroneMissionPolicy;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
