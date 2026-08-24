@@ -36,7 +36,7 @@ Como o problema possui `n = 3` variáveis:
 
 Total esperado: `500` execuções de teste.
 
-Além dos testes unitários completos, há uma suíte BDD com Cucumber para apresentação em aula:
+Além dos testes unitários completos, há uma suíte BDD com Cucumber:
 
 - BVA normal completo: `13` exemplos
 - BVA robusto completo: `19` exemplos
