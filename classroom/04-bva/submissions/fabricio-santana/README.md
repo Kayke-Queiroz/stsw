@@ -15,15 +15,15 @@ Caso qualquer entrada esteja fora desses intervalos, a missão é negada.
 ## Estrutura
 
 - `src/main/java/.../DroneMissionPolicy.java`: regra de negócio
-- `src/main/java/.../DroneMissionDecision.java`: decisões possíveis
 - `src/test/java/.../NormalBvaTest.java`: BVA normal, `13` casos
 - `src/test/java/.../RobustBvaTest.java`: BVA robusto, `19` casos
 - `src/test/java/.../WorstCaseBvaTest.java`: worst-case, `125` casos
 - `src/test/java/.../RobustWorstCaseBvaTest.java`: robust worst-case, `343` casos
 - `src/test/java/.../BvaTestSupport.java`: geração programática das combinações
 - `src/test/resources/features/DroneMission-BVA.feature`: documentação executável em Gherkin
-- `src/test/java/.../cucumber/RunCucumberTest.java`: runner Cucumber
-- `src/test/java/.../cucumber/DroneMissionSteps.java`: steps da feature
+- `src/test/java/.../runners/RunCucumberWithJunitTest.java`: runner Cucumber integrado ao JUnit Platform
+- `src/test/java/.../runners/RunCucumberWithCli.java`: runner direto da CLI do Cucumber
+- `src/test/java/.../steps/DroneMissionSteps.java`: definições dos steps da feature
 
 ## Quantidade de casos
 
@@ -45,46 +45,72 @@ Além dos testes unitários completos, há uma suíte BDD com Cucumber para apre
 
 Os conjuntos combinatórios completos permanecem nos testes JUnit parametrizados, porque `125` e `343` linhas em Gherkin deixariam a feature pouco legível.
 
-## Como executar
+## Como executar todos os testes
 
 ```bash
 cd classroom/04-bva/submissions/fabricio-santana
 mvn test
 ```
 
-Esse comando executa os testes JUnit e a feature Cucumber.
+Esse comando executa os testes unitários JUnit e a feature Cucumber por meio do
+JUnit Platform.
 
-## Como executar o Cucumber sem JUnit
+## Como executar o Cucumber com o runner JUnit
 
-O runner `RunCucumberWithJunitTest` é executado pelo Maven Surefire quando você roda:
+Para executar somente os cenários Cucumber usando o runner
+`RunCucumberWithJunitTest` e o JUnit Platform, use:
 
 ```bash
-mvn test
+mvn test -Dtest=RunCucumberWithJunitTest
 ```
 
-Para executar o Cucumber diretamente pela CLI, sem passar pelo JUnit Platform, use:
+O runner utilizado é:
+
+```text
+br.edu.idp.es.stsw.bva.runners.RunCucumberWithJunitTest
+```
+
+O relatório HTML dessa execução fica em:
+
+```text
+target/site/cucumber-reports/Cucumber.html
+```
+
+## Como executar o Cucumber com o runner CLI
+
+Para executar o Cucumber diretamente pela CLI, sem usar o JUnit Platform, use:
 
 ```bash
-cd classroom/04-bva/submissions/fabricio-santana
-mvn test-compile exec:java
+mvn test-compile exec:java \
+  -Dexec.mainClass=br.edu.idp.es.stsw.bva.runners.RunCucumberWithCli \
+  -Dexec.classpathScope=test
 ```
 
 Esse comando usa a classe:
 
 ```text
-br.edu.idp.stsw.classroom.bva.runners.RunCucumberWithCli
+br.edu.idp.es.stsw.bva.runners.RunCucumberWithCli
 ```
 
-A diferença é:
-
-- `mvn test`: executa JUnit e Cucumber via JUnit Platform.
-- `mvn test-compile exec:java`: compila as classes de teste e executa `io.cucumber.core.cli.Main` diretamente.
-
-O relatório HTML desse runner CLI fica em:
+O goal `test-compile` é necessário porque o runner e as dependências do Cucumber
+estão no classpath de testes. O relatório HTML dessa execução fica em:
 
 ```text
 target/site/cucumber-reports/CucumberCli.html
 ```
+
+## Como executar a classe principal
+
+Para compilar e executar o método `main` de `DroneMissionPolicy`, use:
+
+```bash
+mvn compile exec:java \
+  -Dexec.mainClass=br.edu.idp.es.stsw.bva.DroneMissionPolicy \
+  -Dexec.classpathScope=compile
+```
+
+A aplicação avalia a missão de exemplo configurada no método `main` e imprime
+`AUTORIZADA` ou `NEGADA` no terminal.
 
 ## Como visualizar o relatório local do Cucumber
 
@@ -94,7 +120,7 @@ O relatório HTML do Cucumber fica em:
 target/site/cucumber-reports/Cucumber.html
 ```
 
-Para visualizar com `jwebserver`:
+Para visualizar o relatório gerado pelo runner JUnit com `jwebserver`:
 
 ```bash
 cd target/site/cucumber-reports
@@ -105,6 +131,12 @@ Depois acesse:
 
 ```text
 http://localhost:8001/Cucumber.html
+```
+
+Para o relatório gerado pelo runner CLI, acesse:
+
+```text
+http://localhost:8001/CucumberCli.html
 ```
 
 ## Como gerar cobertura
